@@ -1,0 +1,27 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{struct}\PYG{+w}{ }\PYG{n+nc}{Graph}\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{edg}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{n}{Graph}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{edg}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}\PYGZgt{}}\PYG{p}{(}\PYG{n}{n}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{p}{());}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{add}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{u}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{v}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{edg}\PYG{p}{[}\PYG{n}{u}\PYG{p}{].}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{n}{v}\PYG{p}{);}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{bi\PYGZus{}add}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{u}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{v}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{edg}\PYG{p}{[}\PYG{n}{u}\PYG{p}{].}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{n}{v}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{edg}\PYG{p}{[}\PYG{n}{v}\PYG{p}{].}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{n}{u}\PYG{p}{);}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{clear}\PYG{p}{()\PYGZob{}}
+\PYG{+w}{        }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{u}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{u}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{u}\PYG{o}{++}\PYG{p}{)}
+\PYG{+w}{            }\PYG{n}{edg}\PYG{p}{[}\PYG{n}{u}\PYG{p}{].}\PYG{n}{clear}\PYG{p}{();}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{remove\PYGZus{}dup}\PYG{p}{()\PYGZob{}}
+\PYG{+w}{        }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{u}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{u}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{u}\PYG{o}{++}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{            }\PYG{n}{sort}\PYG{p}{(}\PYG{n}{edg}\PYG{p}{[}\PYG{n}{u}\PYG{p}{].}\PYG{n}{begin}\PYG{p}{(),}\PYG{+w}{ }\PYG{n}{edg}\PYG{p}{[}\PYG{n}{u}\PYG{p}{].}\PYG{n}{end}\PYG{p}{());}
+\PYG{+w}{            }\PYG{n}{edg}\PYG{p}{[}\PYG{n}{u}\PYG{p}{].}\PYG{n}{erase}\PYG{p}{(}\PYG{n}{unique}\PYG{p}{(}\PYG{n}{edg}\PYG{p}{[}\PYG{n}{u}\PYG{p}{].}\PYG{n}{begin}\PYG{p}{(),}\PYG{+w}{ }\PYG{n}{edg}\PYG{p}{[}\PYG{n}{u}\PYG{p}{].}\PYG{n}{end}\PYG{p}{()),}\PYG{+w}{ }\PYG{n}{edg}\PYG{p}{[}\PYG{n}{u}\PYG{p}{].}\PYG{n}{end}\PYG{p}{());}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{};}
+\end{Verbatim}

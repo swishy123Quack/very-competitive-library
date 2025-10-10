@@ -1,0 +1,353 @@
+\documentclass[10pt,a4paper,oneside,twocolumn]{article} 
+\usepackage[a4paper,margin=0.4in,includeheadfoot]{geometry}
+\usepackage{amsmath} 
+\usepackage{listings}
+\usepackage{xcolor} 
+\usepackage{xparse}
+\usepackage{multicol}
+\usepackage{minted2}
+\usepackage{fontawesome5}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\fancyhf{} 
+
+\lhead{2mic1cup - University of Information and Technology}
+\rhead{Topic - \nouppercase{\currentsectiontitle}}
+\cfoot{\thepage}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\newcommand{\currentsectiontitle}{} 
+\newcommand{\msection}[1]{\section{#1}\gdef\currentsectiontitle{#1}}
+
+\NewDocumentCommand{\algorithm}{ m m o m m o }{
+    \subsection{#1}
+    \subsubsection*{\faBook\ Overview}
+    \hrule
+    \vspace{1em}
+    {#2}
+    \IfValueT{#3}{\subsubsection*{\faClock\ Time complexity: {#3}}}
+    \subsubsection*{\faCode\ Implementation}
+    \hrule
+    \inputminted{#4}{#5}
+    \IfValueT{#6}{
+        \subsubsection*{\faQuestionCircle\ Usage}
+        \hrule
+        \vspace{1em}
+        {#6}
+    }
+}
+
+\usemintedstyle{gruvbox-light}
+
+\setlength{\columnsep}{0.5in}   
+
+\title{Simple Sample} % Sets article title
+\author{My Name} % Sets authors name
+\date{\today} % Sets date for date compiled
+
+\begin{document}
+
+\tableofcontents
+
+\setminted{linenos, numbersep=5pt, numbers=left, stepnumber=1, framesep=2mm, bgcolor=bgcol, fontsize=\footnotesize, linenos, breaklines, breakanywhere}
+\definecolor{bgcol}{HTML}{F9F6D5}
+
+\msection{Helpers}
+
+\algorithm{Stress Tester}
+{Simple .bat file for stress testing.}
+{bat}{swishy/StressTester.bat}
+
+\algorithm{Random}
+{Self explanatory.}
+{cpp}{swishy/Random.cpp}
+[
+\begin{itemize} 
+    \item {$uid(a, b)$ returns random integer between $[a, b]$}
+\end{itemize}
+]
+
+\msection{Data Structure}
+\algorithm{Iterative Segment Tree}
+{For-loop implementation of segment tree, faster than recursive. Note: Operation that depends on ordering is not supported (For example: Minimum prefix sum)}
+[$\mathcal{O}(n)$ for constructor, $\mathcal{O}(\log n)$ for query]
+{cpp}{swishy/SegmentTreeFast.cpp}
+
+\algorithm{Lazy Segment Tree}
+{Segment tree that supports ranged update.}
+[$\mathcal{O}(n)$ for constructor, $\mathcal{O}(\log n)$ for query]
+{cpp}{swishy/SegmentTreeLazy.cpp}
+
+\algorithm{Sparse Table}{
+    Uses binary lifting for efficient queries, offline only. 
+}
+[$\mathcal{O}(n\log n)$ for constructor, $\mathcal{O}(1)$ for query]
+{cpp}{swishy/SparseTable.cpp}
+[
+    \begin{itemize}
+        \item Init minimum range query and uses integer type \inputminted{cpp}{swishy/examples/SparseTable.cpp}
+    \end{itemize}
+]
+
+\algorithm{Implicit Treap}{
+    Implicit treap implementation with range add update and range sum query. push() and upd() functions should be changed accordingly like lazy segment tree.
+}
+[$\mathcal{O}(\log n)$ on average for all operations, large constant!!]
+{cpp}{swishy/ImplicitTreap.cpp}
+
+\algorithm{Dynamic Segment Tree}{
+    Range queries and updates on larger range $(1 \leq l \leq r \leq 10^9)$
+}
+[$\mathcal{O}(\log M)$ for every operations, where $M$ is max range]
+{cpp}{swishy/DynamicSegmentTree.cpp}
+
+\algorithm{Persistent Segment Tree}{
+    Preserving history for every segment tree updates.
+}
+[$\mathcal{O}(\log N)$ for every operations]
+{cpp}{swishy/PersistentSegmentTree.cpp}
+[
+    \begin{itemize}
+        \item Init and update segment tree with n nodes, each function returns a pointer, save if needed for later. \inputminted{cpp}{swishy/examples/PersistentSegmentTree1.cpp}
+        \item Query the segment tree at a specific moment. \inputminted{cpp}{swishy/examples/PersistentSegmentTree2.cpp}
+    \end{itemize}
+]
+
+\algorithm{2D Fenwick Tree}{
+    Query and update on a 2D array.
+}
+[$\mathcal{O}(\log^2 n)$ for every operations]
+{cpp}{swishy/2DFenwick.cpp}
+[
+    \begin{itemize}
+        \item query(x, y) returns sum of value from $(1, 1)$ to $(x, y)$.
+        \item query(x1, y1, x2, y2) returns sum of value from $(x1, y1)$ to $(x2, y2)$.
+    \end{itemize}
+]
+
+\algorithm{Disjoint Set Union}{
+    Union disjoint set lol.
+}
+[$\mathcal{O}(\alpha$(n))]
+{cpp}{swishy/DissjointSet.cpp}
+
+\algorithm{Line Container}{
+    Add lines of the form $y=kx+m$, and query maximum value at point x.
+}
+[$\mathcal{O}(\log n)$]
+{cpp}{swishy/LineContainer.cpp}
+
+\algorithm{Lichao Tree}{
+    Add lines of the form $y=ax+b$, and query maximum value at point x, segment tree implementation.
+}
+[$\mathcal{O}(\log n)$]
+{cpp}{swishy/LichaoTree.cpp}
+
+\algorithm{Ordered Set}{
+    A set that supports finding k-th maximum value, or getting the order of an element.
+}
+[$\mathcal{O}(\log n)$, large constant]
+{cpp}{swishy/OrderedSet.cpp}
+[
+    \begin{itemize}
+        \item Uses just like a normal set, but with some added functions. \inputminted{cpp}{swishy/examples/OrderedSet.cpp}
+    \end{itemize}
+]
+
+\algorithm{Minimum Stack/Deque}{
+    Maintains minimum value in a stack/deque.
+}
+[$\mathcal{O}(\alpha$(n)), large constant]
+{cpp}{swishy/MinimumDeque.cpp}
+
+\algorithm{Dynamic Bitset}{
+    Bitset with varied length support. NOTE: This requires relatively new version of GCC, and it might be BUGGED using the shift operator.
+}
+[$\mathcal{O}$(n / 32)]
+{cpp}{swishy/DynamicBitset.cpp}
+[
+    \begin{itemize}
+        \item Init a dynamic bitset with length n. \inputminted{cpp}{swishy/examples/DynamicBitset.cpp}
+    \end{itemize}
+]
+
+\msection{Graph}
+
+\algorithm{Graph}{
+    Helper class, some implementations below will use this.
+}
+{cpp}{swishy/Graph.cpp}
+
+\algorithm{Tree}{
+    Helper class, some implementations below will use this.
+}
+{cpp}{swishy/Tree.cpp}
+
+\algorithm{Strongly Connected Components}{
+    Find strongly connected components, compress the graph if needed
+}
+[$\mathcal{O}(N)$]
+{cpp}{swishy/StronglyConnected.cpp}
+
+\algorithm{Bridges and Articulations}{
+    Find bridges and articulations!!
+}
+[$\mathcal{O}(N)$]  
+{cpp}{swishy/BridgeArt.cpp}
+
+\algorithm{Two SAT}{
+    Solve a system of boolean formula, where every clause has exactly two literals.
+}
+[$\mathcal{O}(N + M)$, $M$ can be a slowing factor]
+{cpp}{swishy/2SAT.cpp}
+[
+    \begin{itemize}
+        \item The $add(x, a, y, b)$ function add the clause $(x$ OR $y)$, where $a, b$ signify whether $x$ or $y$ is negated or not.
+        \item The $solve()$ function returns 1 if there exist a valid assignment, and 0 otherwise. The valid assignment will then be stored in $res$.
+    \end{itemize}
+]
+
+\algorithm{MCMF}{
+    Find a maximum flow with minimum cost, SPFA implementation.
+}
+[$\mathcal{O}(N^3)$ with a bullshit factor]
+{cpp}{swishy/MCMF.cpp}
+
+\algorithm{Maximum Flow (Dinic)}{
+    Maximum flow using Dinic's algorithm.
+}
+[$\mathcal{O}(V^2E)$ for general graphs, but in practice $\approx \mathcal{O}(E^{1.5})$]
+{cpp}{swishy/MaxFlow.cpp}
+
+\algorithm{Maximum Matching (Hopcroft Karp)}{
+    Find maximum matching on bipartite graph.
+}
+[$\mathcal{O}(m \sqrt{n})$ worst case]
+{cpp}{swishy/HopcroftKarp.cpp}
+
+\algorithm{General Matching (Blossom)}{
+    Find maximum matching on general graph.
+}
+[$\mathcal{O}(n^3)$ worst case]
+{cpp}{swishy/Blossom.cpp}
+
+\msection{Math}
+
+\algorithm{Modular Int}{
+    Helper class, some implementations below will use this.
+}
+{cpp}{swishy/Modu.cpp}
+
+\algorithm{Modular Square Root}{
+    Operations on field \[ \langle u, v \rangle = u + v \sqrt{k} \mod p\]
+}   
+{cpp}{swishy/EX.cpp}
+
+\algorithm{Discrete Log}{
+    Given $a, b, m$, find any $x$ that satisfy \[ a^x = b\mod m \]
+}
+[$\mathcal{O}(N\log\log N$)]
+{cpp}{swishy/DiscreteLog.cpp}
+
+\algorithm{Primite Root}{
+    Given $a, n$, find $g$ so that for any $a$ such that $gcd(a, n) = 1$, there exists $k$ such that \[g^k = a \mod n \]
+}
+[$\mathcal{O}(Ans \cdot \log \phi (n) \cdot \log n)$)]
+{cpp}{swishy/PrimitiveRoot.cpp}
+
+\algorithm{Euler's Totient Funnction}{
+    Find $\phi(i)$ for $i$ from $1$ to $N$.
+}
+[$\mathcal{O}(N\log\log N$)]
+{cpp}{swishy/Phi.cpp}
+
+\algorithm{Chinese Remainder Theorem}{
+    Given a system of congruences \[a=a_1\mod M_1, a=a_2\mod M_2, ...\] where $M_i$ might not be pairwise coprime, find any $a$ that satisfy it. 
+}
+[$\mathcal{O}(N\log \max(M_i)$)]
+{cpp}{swishy/CRT.cpp}
+[
+    \begin{itemize}
+        \item The $add(x, y)$ function add the condition $a=x\mod y$.
+        \item If $a \neq -1$, the solution $a$ will satisfy $a=A\mod M$.
+    \end{itemize}
+]
+
+\algorithm{Extended Euclidean}{
+    Given $a, b$, find any $x, y$ that satisfy \[ax + by = gcd(a, b)\]
+    Note that the function pass $x, y$ by reference and returns $gcd(a, b)$.
+}
+[$\mathcal{O}(\log n)$)]
+{cpp}{swishy/ExtendedEuclidean.cpp}
+
+\algorithm{Linear Diophantine}{
+    Given $a, b, c$, find any $x, y$ that satisfy \[ ax+by=c \]
+}
+[$\mathcal{O}(\log n)$)]
+{cpp}{swishy/LinearDiophantine.cpp}
+
+\algorithm{Matrix}{
+    Matrix helper class.
+}
+{cpp}{swishy/Matrix.cpp}
+
+\algorithm{Miller Rabin Primality Test}{
+    Deterministic implementation of Miller Rabin.
+}
+[Should be fast]
+{cpp}{swishy/MillerRabin.cpp}
+
+\algorithm{Fast Fourier Transform}{
+    $multiplymod(A, B, M)$ returns C where \[ C[u]=\sum_{i=1}^{|A|} \sum_{j=1}^{|B|} A_i \cdot B_j \mod M \ (i+j=u)\]
+}
+[$\mathcal{O}(n\log n)$)]
+{cpp}{swishy/FFT.cpp}
+
+\algorithm{OR Convolution}{
+    $convoluteor(A, B)$ returns C where \[ C[u]=\sum_{i=1}^{|A|} \sum_{j=1}^{|B|} A_i \cdot B_j \mod M \ (i | j=u)\]
+}
+[$\mathcal{O}(2^N \cdot N$)]
+{cpp}{swishy/ORConvolution.cpp}
+
+\algorithm{XOR Convolution}{
+    idk lol.
+}
+{cpp}{lenhanbo/XORConvolution.cpp}
+
+\msection{String}
+
+\algorithm{Rolling Hash}{
+    Rolling hash implementation, use multiple mod if necessary.
+}
+[$\mathcal{O}(N)$]
+{cpp}{swishy/Hash.cpp}
+
+\algorithm{Z-Function}{
+    Return an array where the $i$-th element corresponds to the longest sub-string starting from $i$ that matches the prefix of $s$.
+}
+[$\mathcal{O}(N)$]
+{cpp}{swishy/ZFunction.cpp}
+
+\algorithm{Prefix Function}{
+    Return an array where the $i$-th element corresponds to the longest sub-string ending at $i$ that matches the prefix of $s$.
+}
+[$\mathcal{O}(N)$]
+{cpp}{swishy/PrefixFunction.cpp}
+
+\algorithm{Manacher's Algorithm}{
+    Return an array where the $i$-th element corresponds to the longest palindrome that has $i$ as the center, note that the algorithm only works for odd length palindrome, even can also be easily handled by inserting a dummy character in every even indicies.
+}
+[$\mathcal{O}(N)$]
+{cpp}{swishy/Manacher.cpp}
+
+\algorithm{Aho-Corasick}{
+    Construct an automaton of \texttt{Trie} nodes, where $dp[i][c]$ is the next state of $i$ when adding character $c$. If no state exists, we repeatedly go through the next longest available suffix $j$ of $i$, and try to get $dp[j][c]$.
+}
+[$\mathcal{O}(M*K)$, where $M$ is the number of nodes in the \texttt{Trie}, and $K$ is the alphabet size]
+{cpp}{swishy/AhoCorasick.cpp}
+
+\end{document} 

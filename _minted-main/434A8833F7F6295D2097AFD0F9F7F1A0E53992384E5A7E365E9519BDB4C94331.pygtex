@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}define uid(a, b) uniform\PYGZus{}int\PYGZus{}distribution\PYGZlt{}long long\PYGZgt{}(a, b)(rng) }
+\PYG{n}{mt19937}\PYG{+w}{ }\PYG{n+nf}{rng}\PYG{p}{(}\PYG{n}{chrono}\PYG{o}{::}\PYG{n}{steady\PYGZus{}clock}\PYG{o}{::}\PYG{n}{now}\PYG{p}{().}\PYG{n}{time\PYGZus{}since\PYGZus{}epoch}\PYG{p}{().}\PYG{n}{count}\PYG{p}{());}
+\end{Verbatim}

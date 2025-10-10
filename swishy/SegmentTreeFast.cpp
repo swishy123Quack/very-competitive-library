@@ -1,10 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-const long long inf = 1e10;
-const int def = 2001;
-
-//lib
 template<typename T>
 struct SegmentTreeFast{
     vector<T> a;
@@ -40,36 +33,3 @@ struct SegmentTreeFast{
         return res;
     }
 };
-//lib
-
-void solve(){
-    int n, q;
-    cin >> n >> q;
-
-    long long a[n];
-    SegmentTreeFast<long long> st(n, 0);
-
-    for (int i = 0; i < n; i++){
-        cin >> a[i];
-        st.update(i, a[i]);
-    }
-    
-    while (q--){
-        int l, r;
-        cin >> l >> r;
-
-        long long val = st.get(l - 1, r - 1);   
-        cout << val << endl;
-    }
-}
-
-int main(){
-    ios_base::sync_with_stdio(0);
-    cin.tie(0); cout.tie(0);
-
-    int t;
-    t = 1;
-
-    while (t--)
-        solve();
-}

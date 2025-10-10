@@ -1,0 +1,86 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{struct}\PYG{+w}{ }\PYG{n+nc}{Matching}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{g}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{mt}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{is\PYGZus{}ev}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{gr\PYGZus{}buf}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{pi}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{nx}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{st}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n+nf}{group}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k}{if}\PYG{p}{(}\PYG{n}{gr\PYGZus{}buf}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{+w}{ }\PYG{o}{||}\PYG{+w}{ }\PYG{n}{is\PYGZus{}ev}\PYG{p}{[}\PYG{n}{gr\PYGZus{}buf}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]]}\PYG{+w}{ }\PYG{o}{!=}\PYG{+w}{ }\PYG{n}{st}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{gr\PYGZus{}buf}\PYG{p}{[}\PYG{n}{x}\PYG{p}{];}
+\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{gr\PYGZus{}buf}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{group}\PYG{p}{(}\PYG{n}{gr\PYGZus{}buf}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]);}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{match}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{p}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{d}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{mt}\PYG{p}{[}\PYG{n}{p}\PYG{p}{];}
+\PYG{+w}{        }\PYG{n}{mt}\PYG{p}{[}\PYG{n}{p}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{if}\PYG{p}{(}\PYG{n}{d}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{+w}{ }\PYG{o}{||}\PYG{+w}{ }\PYG{n}{mt}\PYG{p}{[}\PYG{n}{d}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{!=}\PYG{+w}{ }\PYG{n}{p}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{return}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{if}\PYG{p}{(}\PYG{n}{nx}\PYG{p}{[}\PYG{n}{p}\PYG{p}{].}\PYG{n}{second}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{n}{mt}\PYG{p}{[}\PYG{n}{d}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{nx}\PYG{p}{[}\PYG{n}{p}\PYG{p}{].}\PYG{n}{first}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{match}\PYG{p}{(}\PYG{n}{nx}\PYG{p}{[}\PYG{n}{p}\PYG{p}{].}\PYG{n}{first}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{d}\PYG{p}{);}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{n}{match}\PYG{p}{(}\PYG{n}{nx}\PYG{p}{[}\PYG{n}{p}\PYG{p}{].}\PYG{n}{first}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{nx}\PYG{p}{[}\PYG{n}{p}\PYG{p}{].}\PYG{n}{second}\PYG{p}{);}
+\PYG{+w}{            }\PYG{n}{match}\PYG{p}{(}\PYG{n}{nx}\PYG{p}{[}\PYG{n}{p}\PYG{p}{].}\PYG{n}{second}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{nx}\PYG{p}{[}\PYG{n}{p}\PYG{p}{].}\PYG{n}{first}\PYG{p}{);}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n+nf}{arg}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{is\PYGZus{}ev}\PYG{p}{[}\PYG{n}{st}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{st}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{gr\PYGZus{}buf}\PYG{p}{[}\PYG{n}{st}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{nx}\PYG{p}{[}\PYG{n}{st}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{pi}\PYG{p}{(}\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{queue}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{q}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{q}\PYG{p}{.}\PYG{n}{push}\PYG{p}{(}\PYG{n}{st}\PYG{p}{);}
+\PYG{+w}{        }\PYG{k}{while}\PYG{p}{(}\PYG{n}{q}\PYG{p}{.}\PYG{n}{size}\PYG{p}{())}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{a}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{q}\PYG{p}{.}\PYG{n}{front}\PYG{p}{();}
+\PYG{+w}{            }\PYG{n}{q}\PYG{p}{.}\PYG{n}{pop}\PYG{p}{();}
+\PYG{+w}{            }\PYG{k}{for}\PYG{p}{(}\PYG{k}{auto}\PYG{+w}{ }\PYG{n}{b}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{ }\PYG{n}{g}\PYG{p}{[}\PYG{n}{a}\PYG{p}{])}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                }\PYG{k}{if}\PYG{p}{(}\PYG{n}{b}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{st}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{continue}\PYG{p}{;}
+\PYG{+w}{                }\PYG{k}{if}\PYG{p}{(}\PYG{n}{mt}\PYG{p}{[}\PYG{n}{b}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                    }\PYG{n}{mt}\PYG{p}{[}\PYG{n}{b}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{;}
+\PYG{+w}{                    }\PYG{n}{match}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{);}
+\PYG{+w}{                    }\PYG{k}{return}\PYG{+w}{ }\PYG{n+nb}{true}\PYG{p}{;}
+\PYG{+w}{                }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                }\PYG{k}{if}\PYG{p}{(}\PYG{n}{is\PYGZus{}ev}\PYG{p}{[}\PYG{n}{b}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{st}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{x}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{group}\PYG{p}{(}\PYG{n}{a}\PYG{p}{),}\PYG{+w}{ }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{group}\PYG{p}{(}\PYG{n}{b}\PYG{p}{);}
+\PYG{+w}{                    }\PYG{k}{if}\PYG{p}{(}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{y}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{continue}\PYG{p}{;}
+\PYG{+w}{                    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{z}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{;}
+\PYG{+w}{                    }\PYG{k}{while}\PYG{p}{(}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{!=}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{+w}{ }\PYG{o}{||}\PYG{+w}{ }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{!=}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                        }\PYG{k}{if}\PYG{p}{(}\PYG{n}{y}\PYG{+w}{ }\PYG{o}{!=}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{)}\PYG{+w}{ }\PYG{n}{swap}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{y}\PYG{p}{);}
+\PYG{+w}{                        }\PYG{k}{if}\PYG{p}{(}\PYG{n}{nx}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{pi}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{))}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                            }\PYG{n}{z}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{;}
+\PYG{+w}{                            }\PYG{k}{break}\PYG{p}{;}
+\PYG{+w}{                        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                        }\PYG{n}{nx}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{pi}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{);}
+\PYG{+w}{                        }\PYG{n}{x}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{group}\PYG{p}{(}\PYG{n}{nx}\PYG{p}{[}\PYG{n}{mt}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]].}\PYG{n}{first}\PYG{p}{);}
+\PYG{+w}{                    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                    }\PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{v}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{group}\PYG{p}{(}\PYG{n}{a}\PYG{p}{),}\PYG{+w}{ }\PYG{n}{group}\PYG{p}{(}\PYG{n}{b}\PYG{p}{)\PYGZcb{})}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                        }\PYG{k}{while}\PYG{p}{(}\PYG{n}{v}\PYG{+w}{ }\PYG{o}{!=}\PYG{+w}{ }\PYG{n}{z}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                            }\PYG{n}{q}\PYG{p}{.}\PYG{n}{push}\PYG{p}{(}\PYG{n}{v}\PYG{p}{);}
+\PYG{+w}{                            }\PYG{n}{is\PYGZus{}ev}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{st}\PYG{p}{;}
+\PYG{+w}{                            }\PYG{n}{gr\PYGZus{}buf}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{z}\PYG{p}{;}
+\PYG{+w}{                            }\PYG{n}{v}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{group}\PYG{p}{(}\PYG{n}{nx}\PYG{p}{[}\PYG{n}{mt}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]].}\PYG{n}{first}\PYG{p}{);}
+\PYG{+w}{                        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{else}\PYG{+w}{ }\PYG{k}{if}\PYG{p}{(}\PYG{n}{is\PYGZus{}ev}\PYG{p}{[}\PYG{n}{mt}\PYG{p}{[}\PYG{n}{b}\PYG{p}{]]}\PYG{+w}{ }\PYG{o}{!=}\PYG{+w}{ }\PYG{n}{st}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                    }\PYG{n}{is\PYGZus{}ev}\PYG{p}{[}\PYG{n}{mt}\PYG{p}{[}\PYG{n}{b}\PYG{p}{]]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{st}\PYG{p}{;}
+\PYG{+w}{                    }\PYG{n}{nx}\PYG{p}{[}\PYG{n}{b}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{pi}\PYG{p}{(}\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{);}
+\PYG{+w}{                    }\PYG{n}{nx}\PYG{p}{[}\PYG{n}{mt}\PYG{p}{[}\PYG{n}{b}\PYG{p}{]]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{pi}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{);}
+\PYG{+w}{                    }\PYG{n}{gr\PYGZus{}buf}\PYG{p}{[}\PYG{n}{mt}\PYG{p}{[}\PYG{n}{b}\PYG{p}{]]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{;}
+\PYG{+w}{                    }\PYG{n}{q}\PYG{p}{.}\PYG{n}{push}\PYG{p}{(}\PYG{n}{mt}\PYG{p}{[}\PYG{n}{b}\PYG{p}{]);}
+\PYG{+w}{                }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{n+nb}{false}\PYG{p}{;}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{n}{Matching}\PYG{p}{(}\PYG{k}{const}\PYG{+w}{ }\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{n}{\PYGZus{}g}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{(}\PYG{n}{\PYGZus{}g}\PYG{p}{.}\PYG{n}{size}\PYG{p}{())),}\PYG{+w}{ }\PYG{n}{g}\PYG{p}{(}\PYG{n}{\PYGZus{}g}\PYG{p}{),}\PYG{+w}{ }\PYG{n}{mt}\PYG{p}{(}\PYG{n}{n}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{),}\PYG{+w}{ }\PYG{n}{is\PYGZus{}ev}\PYG{p}{(}\PYG{n}{n}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{),}\PYG{+w}{ }\PYG{n}{gr\PYGZus{}buf}\PYG{p}{(}\PYG{n}{n}\PYG{p}{),}\PYG{+w}{ }\PYG{n}{nx}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k}{for}\PYG{p}{(}\PYG{n}{st}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{st}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{st}\PYG{o}{++}\PYG{p}{)}
+\PYG{+w}{            }\PYG{k}{if}\PYG{p}{(}\PYG{n}{mt}\PYG{p}{[}\PYG{n}{st}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{)}\PYG{+w}{ }\PYG{n}{arg}\PYG{p}{();}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{pi}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{max\PYGZus{}match}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{pi}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{res}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{++}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{            }\PYG{k}{if}\PYG{p}{(}\PYG{n}{i}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{mt}\PYG{p}{[}\PYG{n}{i}\PYG{p}{])}\PYG{+w}{ }
+\PYG{+w}{                }\PYG{n}{res}\PYG{p}{.}\PYG{n}{push\PYGZus{}back}\PYG{p}{(\PYGZob{}}\PYG{n}{i}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{mt}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]\PYGZcb{});}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{res}\PYG{p}{;}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{};}
+\end{Verbatim}

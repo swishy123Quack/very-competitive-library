@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{Vertex}\PYG{o}{*\PYGZgt{}}\PYG{+w}{ }\PYG{n}{roots}\PYG{p}{;}
+\PYG{n}{roots}\PYG{p}{.}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{n}{build}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{n}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{));}\PYG{+w}{ }\PYG{c+c1}{//init}
+\PYG{p}{(...)}
+\PYG{n}{roots}\PYG{p}{.}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{n}{update}\PYG{p}{(}\PYG{n}{roots}\PYG{p}{.}\PYG{n}{back}\PYG{p}{(),}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{n}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{));}\PYG{+w}{ }\PYG{c+c1}{//update at the last moment}
+\PYG{p}{(...)}
+\PYG{n}{roots}\PYG{p}{.}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{n}{update}\PYG{p}{(}\PYG{n}{roots}\PYG{p}{[}\PYG{n}{a}\PYG{p}{],}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{n}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{));}\PYG{+w}{ }\PYG{c+c1}{//update at some specific moment}
+\end{Verbatim}

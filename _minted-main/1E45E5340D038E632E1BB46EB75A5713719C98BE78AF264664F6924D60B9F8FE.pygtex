@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{dynamic\PYGZus{}bitset}\PYG{o}{\PYGZlt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{bs}\PYG{p}{;}
+\PYG{n}{bs}\PYG{p}{.}\PYG{n}{resize}\PYG{p}{(}\PYG{n}{n}\PYG{p}{);}
+\end{Verbatim}

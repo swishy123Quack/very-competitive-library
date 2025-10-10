@@ -1,4 +1,3 @@
-//lib
 struct DissjointSet{
     vector<int> p;
     int cnt = 0;
@@ -25,4 +24,3 @@ struct DissjointSet{
         p[v] = u;
     }
 };
-//lib

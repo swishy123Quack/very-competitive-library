@@ -1,10 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-const long long inf = 1e10;
-const int def = 2001;
-
-//lib
 template<typename T>
 class SegmentTreeLazy{
 public:
@@ -70,48 +63,3 @@ private:
         return cmb(_get(l, mid, ql, qr, crr * 2 + 1), _get(mid + 1, r, ql, qr, crr * 2 + 2));  
     }
 };
-//lib
-
-void solve(){
-    int n, q;
-    cin >> n >> q;
- 
-    long long a[n];
-    SegmentTreeLazy<long long> st(n, 0);
-
-    for (int i = 0; i < n; i++){
-        cin >> a[i];
-        st.update(i, i, a[i]);
-    }
- 
-    for (int i = 0; i < q; i++){
-        int t;
-        cin >> t;
- 
-        if (t == 1){
-            long long l, r, v;
-            cin >> l >> r >> v;
- 
-            l--; r--;
-            st.update(l, r, v);
-        }
- 
-        else{
-            int x;
-            cin >> x;
- 
-            cout << st.get(x - 1, x - 1) << endl;
-        }
-    }
-}
-
-int main(){
-    ios_base::sync_with_stdio(0);
-    cin.tie(0); cout.tie(0);
-
-    int t;
-    t = 1;
-
-    while (t--)
-        solve();
-}

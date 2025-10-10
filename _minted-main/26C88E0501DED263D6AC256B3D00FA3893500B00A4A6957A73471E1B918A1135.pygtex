@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}include}\PYG{+w}{ }\PYG{c+cpf}{\PYGZlt{}tr2/dynamic\PYGZus{}bitset\PYGZgt{}}\PYG{c+c1}{   }
+\PYG{k}{using}\PYG{+w}{ }\PYG{k}{namespace}\PYG{+w}{ }\PYG{n+nn}{tr2}\PYG{p}{;}
+\end{Verbatim}

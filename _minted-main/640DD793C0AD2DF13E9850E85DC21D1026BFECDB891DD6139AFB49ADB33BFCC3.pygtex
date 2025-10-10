@@ -1,0 +1,26 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{@}\PYG{k}{echo} off
+g++ \PYGZhy{}std=c++20 \PYGZhy{}o solution test.cpp
+g++ \PYGZhy{}std=c++20 \PYGZhy{}o brute brute.cpp
+g++ \PYGZhy{}std=c++20 \PYGZhy{}o gen gen.cpp
+
+\PYG{k}{for} \PYG{k}{/l} \PYG{l+s+se}{\PYGZpc{}\PYGZpc{}}x \PYG{k}{in} \PYG{p}{(}\PYG{l+m+mi}{1}, \PYG{l+m+mi}{1}, \PYG{l+m+mi}{1000}\PYG{p}{)} \PYG{k}{do} \PYG{p}{(}
+    gen \PYG{p}{\PYGZgt{}} input.in
+    solution \PYG{p}{\PYGZlt{}} input.in \PYG{p}{\PYGZgt{}} output.out
+    brute \PYG{p}{\PYGZlt{}} input.in \PYG{p}{\PYGZgt{}} output2.out
+    fc output.out output2.out \PYG{p}{\PYGZgt{}} nul
+
+    \PYG{k}{if} \PYG{k}{ERRORLEVEL} \PYG{l+m+mi}{1} \PYG{p}{(}
+        \PYG{k}{echo} INPUT
+        \PYG{k}{type} input.in
+        \PYG{k}{echo}.
+        \PYG{k}{echo} SOLUTION OUTOUT
+        \PYG{k}{type} output.out
+        \PYG{k}{echo}.
+        \PYG{k}{echo} CORRECT OUTPUT
+        \PYG{k}{type} output2.out
+        \PYG{k}{echo}.
+    \PYG{p}{)}
+\PYG{p}{)}
+\PYG{k}{echo} all tests passed
+\end{Verbatim}
