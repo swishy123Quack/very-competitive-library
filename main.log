@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.9)  10 OCT 2025 10:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.9)  10 OCT 2025 11:25
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -45,7 +45,22 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen155
 \Gm@layoutvoffset=\dimen156
 \Gm@dimlist=\toks18
- (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+ (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen157
+\Gin@req@width=\dimen158
+) (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/06/16 v2.17y AMS math features
 \@mathmargin=\skip51
 
@@ -55,10 +70,10 @@ Package: amstext 2024/11/17 v2.01 AMS text
  (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
-\ex@=\dimen157
+\ex@=\dimen159
 )) (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen158
+\pmbraise@=\dimen160
 ) (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
@@ -79,7 +94,7 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen159
+\big@size=\dimen161
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
 \macc@depth=\count291
@@ -97,12 +112,12 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \column@=\count296
 \maxfields@=\count297
 \andhelp@=\toks21
-\eqnshift@=\dimen160
-\alignsep@=\dimen161
-\tagshift@=\dimen162
-\tagwidth@=\dimen163
-\totwidth@=\dimen164
-\lineht@=\dimen165
+\eqnshift@=\dimen162
+\alignsep@=\dimen163
+\tagshift@=\dimen164
+\tagwidth@=\dimen165
+\totwidth@=\dimen166
+\lineht@=\dimen167
 \@envbody=\toks22
 \multlinegap=\skip52
 \multlinetaggap=\skip53
@@ -114,14 +129,14 @@ LaTeX Info: Redefining \] on input line 2950.
 \lst@gtempboxa=\box55
 \lst@token=\toks24
 \lst@length=\count299
-\lst@currlwidth=\dimen166
+\lst@currlwidth=\dimen168
 \lst@column=\count300
 \lst@pos=\count301
-\lst@lostspace=\dimen167
-\lst@width=\dimen168
+\lst@lostspace=\dimen169
+\lst@width=\dimen170
 \lst@newlines=\count302
 \lst@lineno=\count303
-\lst@maxwidth=\dimen169
+\lst@maxwidth=\dimen171
  (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 ) (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
@@ -139,9 +154,7 @@ Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
-) (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+ (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -166,22 +179,22 @@ Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
 Package multicol Warning: May not work with the twocolumn option on input line 145.
 
 \mult@box=\box57
-\multicol@leftmargin=\dimen170
+\multicol@leftmargin=\dimen172
 \c@unbalance=\count308
 \c@collectmore=\count309
 \doublecol@number=\count310
 \multicoltolerance=\count311
 \multicolpretolerance=\count312
-\full@width=\dimen171
-\page@free=\dimen172
-\premulticols=\dimen173
-\postmulticols=\dimen174
+\full@width=\dimen173
+\page@free=\dimen174
+\premulticols=\dimen175
+\postmulticols=\dimen176
 \multicolsep=\skip54
 \multicolbaselineskip=\skip55
 \partial@page=\box58
 \last@line=\box59
 \mc@boxedresult=\box60
-\maxbalancingoverflow=\dimen175
+\maxbalancingoverflow=\dimen177
 \mult@rightbox=\box61
 \mult@grightbox=\box62
 \mult@firstbox=\box63
@@ -225,9 +238,9 @@ Package multicol Warning: May not work with the twocolumn option on input line 1
 \c@minrows=\count313
 \c@columnbadness=\count314
 \c@finalcolumnbadness=\count315
-\last@try=\dimen176
-\multicolovershoot=\dimen177
-\multicolundershoot=\dimen178
+\last@try=\dimen178
+\multicolovershoot=\dimen179
+\multicolundershoot=\dimen180
 \mult@nat@firstbox=\box101
 \colbreak@box=\box102
 \mc@col@check@num=\count316
@@ -268,16 +281,16 @@ Package: lineno 2025/05/13 line numbers on paragraphs v5.5
 \linenopenalty=\count322
 \output=\toks25
 \linenoprevgraf=\count323
-\linenumbersep=\dimen179
-\linenumberwidth=\dimen180
+\linenumbersep=\dimen181
+\linenumberwidth=\dimen182
 \c@linenumber=\count324
 \c@pagewiselinenumber=\count325
 \c@LN@truepage=\count326
 \c@internallinenumber=\count327
 \c@internallinenumbers=\count328
-\quotelinenumbersep=\dimen181
-\bframerule=\dimen182
-\bframesep=\dimen183
+\quotelinenumbersep=\dimen183
+\bframerule=\dimen184
+\bframesep=\dimen185
 \bframebox=\box104
 \@LN@amsmath@ams@eqpen=\count329
 )
@@ -292,21 +305,21 @@ Package: lineno 2025/05/13 line numbers on paragraphs v5.5
 \c@FV@HighlightLinesStop=\count335
 \FV@LoopCount=\count336
 \FV@NCharsBox=\box107
-\FV@BreakIndent=\dimen184
+\FV@BreakIndent=\dimen186
 \FV@BreakIndentNChars=\count337
-\FV@BreakSymbolSepLeft=\dimen185
+\FV@BreakSymbolSepLeft=\dimen187
 \FV@BreakSymbolSepLeftNChars=\count338
-\FV@BreakSymbolSepRight=\dimen186
+\FV@BreakSymbolSepRight=\dimen188
 \FV@BreakSymbolSepRightNChars=\count339
-\FV@BreakSymbolIndentLeft=\dimen187
+\FV@BreakSymbolIndentLeft=\dimen189
 \FV@BreakSymbolIndentLeftNChars=\count340
-\FV@BreakSymbolIndentRight=\dimen188
+\FV@BreakSymbolIndentRight=\dimen190
 \FV@BreakSymbolIndentRightNChars=\count341
 \c@FancyVerbLineBreakLast=\count342
 \FV@LineBox=\box108
 \FV@LineIndentBox=\box109
 \c@FV@BreakBufferDepth=\count343
-\FV@LineWidth=\dimen189
+\FV@LineWidth=\dimen191
 ) (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 ) (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
@@ -328,10 +341,10 @@ Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 ) (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/framed\framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip57
-\fb@frw=\dimen190
-\fb@frh=\dimen191
-\FrameRule=\dimen192
-\FrameSep=\dimen193
+\fb@frw=\dimen192
+\fb@frh=\dimen193
+\FrameRule=\dimen194
+\FrameSep=\dimen195
 ) (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count346
@@ -381,20 +394,20 @@ runsystem(del main.aex)...executed.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -430,143 +443,164 @@ LaTeX Font Info:    ... okay on input line 52.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+(C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count350
+\scratchdimen=\dimen196
+\scratchbox=\box113
+\nofMPsegments=\count351
+\nofMParguments=\count352
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count353
+\MPscratchDim=\dimen197
+\MPnumerator=\count354
+\makeMPintoPDFobject=\count355
+\everyMPtoPDFconversion=\toks31
+) (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+)) (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 )
-\c@lstlisting=\count350
- (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count351
-\scratchdimen=\dimen194
-\scratchbox=\box113
-\nofMPsegments=\count352
-\nofMParguments=\count353
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count354
-\MPscratchDim=\dimen195
-\MPnumerator=\count355
-\makeMPintoPDFobject=\count356
-\everyMPtoPDFconversion=\toks31
-) (main.toc)
+\c@lstlisting=\count356
+<buttadog.png, id=1, 468.24937pt x 397.485pt>
+File: buttadog.png Graphic file (type png)
+<use buttadog.png>
+Package pdftex.def Info: buttadog.png  used on input line 61.
+(pdftex.def)             Requested size: 107.9369pt x 91.62584pt.
+
+
+LaTeX Warning: No \author given.
+
+(main.toc
+
+)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 64.
- (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomefree0.fd)
 
-(_minted-main/gruvbox-light.pygstyle) (_minted-main/640DD793C0AD2DF13E9850E85DC21D1026BFECDB891DD6139AFB49ADB33BFCC3.pygtex) (_minted-main/434A8833F7F6295D2097AFD0F9F7F1A0E53992384E5A7E365E9519BDB4C94331.pygtex)
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 72.
- (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomefree2.fd)
 
 [1{C:/Users/ACER/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
-{C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free0.enc}{C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free2.enc}] (_minted-main/EE8105180CC61CEE165984729916C7B780A3F0112A24AC00598B9126BE29BC4C.pygtex) (_minted-main/7CCB339BABCF0A74716E188CB0A37B1938018AF794DA56D1174481CB73C6DD3E.pygtex)
 
-(_minted-main/D6710CD4546BC9EDBE9234E7FF44333FBB7DD9228102580BE22369294CD49359.pygtex)
+ <./buttadog.png>]
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 73.
+ (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomefree0.fd) (_minted-main/gruvbox-light.pygstyle) (_minted-main/640DD793C0AD2DF13E9850E85DC21D1026BFECDB891DD6139AFB49ADB33BFCC3.pygtex) (_minted-main/434A8833F7F6295D2097AFD0F9F7F1A0E53992384E5A7E365E9519BDB4C94331.pygtex)
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 81.
+ (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomefree2.fd)
 
-[2] (_minted-main/A0E5FE01AA1839D8BD6AB125E19C6AB7C91322FC0B6B564D8486A24A2DB6271D.pygtex) (_minted-main/1232B8CA420C9EE0FFE171EC9BB972CD5C021CC09144EF261FC628A22AF9775A.pygtex)
+(_minted-main/EE8105180CC61CEE165984729916C7B780A3F0112A24AC00598B9126BE29BC4C.pygtex) (_minted-main/7CCB339BABCF0A74716E188CB0A37B1938018AF794DA56D1174481CB73C6DD3E.pygtex)
 
+[2{C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free0.enc}{C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free2.enc}] (_minted-main/D6710CD4546BC9EDBE9234E7FF44333FBB7DD9228102580BE22369294CD49359.pygtex)
 
+(_minted-main/A0E5FE01AA1839D8BD6AB125E19C6AB7C91322FC0B6B564D8486A24A2DB6271D.pygtex) (_minted-main/1232B8CA420C9EE0FFE171EC9BB972CD5C021CC09144EF261FC628A22AF9775A.pygtex)
+
+[3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[3] (_minted-main/F62C3E1B25642A0FE4C76FCC8A0E798B7366638CD6EC928A1847CD5ECDAA57AE.pygtex)
+(_minted-main/F62C3E1B25642A0FE4C76FCC8A0E798B7366638CD6EC928A1847CD5ECDAA57AE.pygtex)
 
-(_minted-main/5416A87F51301444534E40E67598433EDD1D55ABDD8D90D5A0300639BA067E93.pygtex)
+[4] (_minted-main/5416A87F51301444534E40E67598433EDD1D55ABDD8D90D5A0300639BA067E93.pygtex)
 
-[4] (_minted-main/851CA91286331354473DAE4C2E6DBFE5C42986A73B79303197D17A3D04779FB0.pygtex) (_minted-main/A755D79E40BF80A352D0E32AFCD9CBCDDE2A6CA0026BD2FEC4E37CF6CFB87077.pygtex) (_minted-main/6B080928EB0B4C9658B2A3C94669A928680186B1E2606A883DB90CB71DCAFC21.pygtex)
+(_minted-main/851CA91286331354473DAE4C2E6DBFE5C42986A73B79303197D17A3D04779FB0.pygtex) (_minted-main/A755D79E40BF80A352D0E32AFCD9CBCDDE2A6CA0026BD2FEC4E37CF6CFB87077.pygtex) (_minted-main/6B080928EB0B4C9658B2A3C94669A928680186B1E2606A883DB90CB71DCAFC21.pygtex)
 
-(_minted-main/B39A5976E38305544F1CF75617E2B15735B956522317849B754E9B98DF2A88E7.pygtex) (_minted-main/104A913C516815E19E735605B43AD0066B35A556B5FDA32F9D8069D53A05215F.pygtex)
+[5] (_minted-main/B39A5976E38305544F1CF75617E2B15735B956522317849B754E9B98DF2A88E7.pygtex) (_minted-main/104A913C516815E19E735605B43AD0066B35A556B5FDA32F9D8069D53A05215F.pygtex)
 
-[5] (_minted-main/FB5140701AF90C09A7B3CCB7756AB9C12A6774B2DE83AE02136B051B3BFABE9A.pygtex)
+(_minted-main/FB5140701AF90C09A7B3CCB7756AB9C12A6774B2DE83AE02136B051B3BFABE9A.pygtex)
 
-(_minted-main/C90589178344168EEDBFF1F115F374C74B8124F6E126B1EDDF25363E942D5C79.pygtex) (_minted-main/03BE717EC24B62C189C720BCF31097F969FDE523783A27E88C50AFB9FA52B152.pygtex) (_minted-main/9424632175E2AF1C4E93933B9D7767CB9D9F5A34006DB42808ED565499D1C231.pygtex)
+[6] (_minted-main/C90589178344168EEDBFF1F115F374C74B8124F6E126B1EDDF25363E942D5C79.pygtex) (_minted-main/03BE717EC24B62C189C720BCF31097F969FDE523783A27E88C50AFB9FA52B152.pygtex) (_minted-main/9424632175E2AF1C4E93933B9D7767CB9D9F5A34006DB42808ED565499D1C231.pygtex)
 
-[6] (_minted-main/26C88E0501DED263D6AC256B3D00FA3893500B00A4A6957A73471E1B918A1135.pygtex) (_minted-main/1E45E5340D038E632E1BB46EB75A5713719C98BE78AF264664F6924D60B9F8FE.pygtex) (_minted-main/4DBB4C62583795E1A822379188A05CE2B12F84B7642D6DA550AA2E74229993DE.pygtex)
+(_minted-main/26C88E0501DED263D6AC256B3D00FA3893500B00A4A6957A73471E1B918A1135.pygtex) (_minted-main/1E45E5340D038E632E1BB46EB75A5713719C98BE78AF264664F6924D60B9F8FE.pygtex) (_minted-main/4DBB4C62583795E1A822379188A05CE2B12F84B7642D6DA550AA2E74229993DE.pygtex)
 
-(_minted-main/873BE2F83046B5F1E2847858B9A777E93289DEA304BD41C2EA05EAF72E5BC2FB.pygtex)
+[7] (_minted-main/873BE2F83046B5F1E2847858B9A777E93289DEA304BD41C2EA05EAF72E5BC2FB.pygtex)
 
-[7] (_minted-main/5C4C606F56917BA72936B3B89A53A34BB215165CEE97C35C9AE31663DFD08437.pygtex)
+(_minted-main/5C4C606F56917BA72936B3B89A53A34BB215165CEE97C35C9AE31663DFD08437.pygtex)
 Underfull \vbox (badness 1509) has occurred while \output is active []
 
 
 
-(_minted-main/2D688800604397C9BCAF9EC9FABA210F51F34FD75C7A8801D141245E8D9CE69D.pygtex)
+[8] (_minted-main/2D688800604397C9BCAF9EC9FABA210F51F34FD75C7A8801D141245E8D9CE69D.pygtex)
 Underfull \vbox (badness 1019) has occurred while \output is active []
 
 
 
-[8] (_minted-main/2C7460A34A765EC49073551BAE94078269AD3E995695C9C69491ECA72D0E3554.pygtex)
+(_minted-main/2C7460A34A765EC49073551BAE94078269AD3E995695C9C69491ECA72D0E3554.pygtex)
 Underfull \vbox (badness 1997) has occurred while \output is active []
 
 
 
-(_minted-main/CD26C4E7A55F7AB60CA55D1C7C71C70D6DF404345E625A9F8BC445D306F44300.pygtex)
+[9] (_minted-main/CD26C4E7A55F7AB60CA55D1C7C71C70D6DF404345E625A9F8BC445D306F44300.pygtex)
 
-[9] (_minted-main/ED1C3FBA61C7AA3EEA36E883620A2206DB053A4CA221DC2E32EC61DFB4183B75.pygtex)
+(_minted-main/ED1C3FBA61C7AA3EEA36E883620A2206DB053A4CA221DC2E32EC61DFB4183B75.pygtex)
 
-(_minted-main/91FF10854F86D7AD6C8E099B7C0CA82A341A0EEEC1A0E7B0C8873B423A34FCCA.pygtex)
+[10] (_minted-main/91FF10854F86D7AD6C8E099B7C0CA82A341A0EEEC1A0E7B0C8873B423A34FCCA.pygtex)
 
-[10]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-(_minted-main/913E4C82018564416698BE4733BA127EF0BFBBD48D75C6940928864578D65B12.pygtex)
+[11] (_minted-main/913E4C82018564416698BE4733BA127EF0BFBBD48D75C6940928864578D65B12.pygtex)
 
-[11] (_minted-main/4FB64F7B8DE4DFB59C387B2C97537A1217FA189ED201D84CD21B709257F2302A.pygtex)
+(_minted-main/4FB64F7B8DE4DFB59C387B2C97537A1217FA189ED201D84CD21B709257F2302A.pygtex)
 
-(_minted-main/283F154DC55FF04B578F6E4E43780821841844F230B78F9B41431FF13C03B7B1.pygtex)
+[12] (_minted-main/283F154DC55FF04B578F6E4E43780821841844F230B78F9B41431FF13C03B7B1.pygtex)
 
-[12] (_minted-main/87A21D4B33E294445F187A071930E5C03CB3D7E741822F6159C3CE07FE4B64AA.pygtex)
+(_minted-main/87A21D4B33E294445F187A071930E5C03CB3D7E741822F6159C3CE07FE4B64AA.pygtex)
 
-(_minted-main/782D9E28D519C59ABD3E84B044825D0859DD93EDDEC1D6138935195870555521.pygtex) (_minted-main/D199D1A245CC9E5A8BCBEB9CE04A18581C8707E8A8B77651CBB10E329AA13582.pygtex)
+[13] (_minted-main/782D9E28D519C59ABD3E84B044825D0859DD93EDDEC1D6138935195870555521.pygtex) (_minted-main/D199D1A245CC9E5A8BCBEB9CE04A18581C8707E8A8B77651CBB10E329AA13582.pygtex)
 
-[13] (_minted-main/ED7606E0C9DD8EAFF57BB243669553AC8E0C09286221C4BA62E3C26FE9DA3785.pygtex)
+(_minted-main/ED7606E0C9DD8EAFF57BB243669553AC8E0C09286221C4BA62E3C26FE9DA3785.pygtex)
 
-(_minted-main/74FBC58F4051EFEEC4BC553BEEC1137CC84797E993C0E1DC3FEB48652BB3E387.pygtex) (_minted-main/0EE4F73F965AC7992DC59BEAA3EABF9F4339693B71BD7957E65E577AC17EE021.pygtex) (_minted-main/B8C70305868F420EFB231F271F246036D98E26383CFA1259093836F6E6293429.pygtex)
+[14] (_minted-main/74FBC58F4051EFEEC4BC553BEEC1137CC84797E993C0E1DC3FEB48652BB3E387.pygtex) (_minted-main/0EE4F73F965AC7992DC59BEAA3EABF9F4339693B71BD7957E65E577AC17EE021.pygtex) (_minted-main/B8C70305868F420EFB231F271F246036D98E26383CFA1259093836F6E6293429.pygtex)
 
-[14] (_minted-main/8F781E19E704A34E816C02B39AFA378FA6CC81D49D877F917CC2F2D4BF4590C7.pygtex)
+(_minted-main/8F781E19E704A34E816C02B39AFA378FA6CC81D49D877F917CC2F2D4BF4590C7.pygtex)
 
-(_minted-main/3FAD9FC6F8EAF362BF9352FCD1CC088D909E7FECE700CAE1141D022AE3DAAB06.pygtex)
+[15] (_minted-main/3FAD9FC6F8EAF362BF9352FCD1CC088D909E7FECE700CAE1141D022AE3DAAB06.pygtex)
 
-[15] (_minted-main/659A97DE03895399174E4C8E536189119D39EA277D3DB23E2A2B64B0B5F46C84.pygtex)
+(_minted-main/659A97DE03895399174E4C8E536189119D39EA277D3DB23E2A2B64B0B5F46C84.pygtex)
 
-(_minted-main/56884F434FDA0BE52504C6AAEB48F482253DEEAA1048BD258C1969A3110851B8.pygtex)
+[16] (_minted-main/56884F434FDA0BE52504C6AAEB48F482253DEEAA1048BD258C1969A3110851B8.pygtex)
 Underfull \vbox (badness 2111) has occurred while \output is active []
 
 
 
-[16] (_minted-main/E77AFFC78C77E9DFB57E69A76E97B3A7A1D764B19464050DC7614B6CB6521A70.pygtex) (_minted-main/EAFA89ACC3F7EFF5DD12EC9CFFA77F45A4BF3D5237FFCD49AD0544594FFA7E85.pygtex)
+(_minted-main/E77AFFC78C77E9DFB57E69A76E97B3A7A1D764B19464050DC7614B6CB6521A70.pygtex) (_minted-main/EAFA89ACC3F7EFF5DD12EC9CFFA77F45A4BF3D5237FFCD49AD0544594FFA7E85.pygtex)
 
-(_minted-main/1C2E4F04973542436A39F73D308C24D738D203D06F74F0732DCB10A22287DB10.pygtex) (_minted-main/F6917B9D6F08490F59F1115C3DE75DAD9725ED3A5E18CFB8A24563BB54E7A179.pygtex)
+[17] (_minted-main/1C2E4F04973542436A39F73D308C24D738D203D06F74F0732DCB10A22287DB10.pygtex) (_minted-main/F6917B9D6F08490F59F1115C3DE75DAD9725ED3A5E18CFB8A24563BB54E7A179.pygtex)
 
-[17]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 352.
- (_minted-main/4524375C825DC405E7C1A050430AB93D9159C7792940F23AB6C1C4914B1E6354.pygtex)
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 361.
+(_minted-main/4524375C825DC405E7C1A050430AB93D9159C7792940F23AB6C1C4914B1E6354.pygtex)
+
+[18]
 
 
 
-[18] (main.aux)
+[19
+
+] (main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 12233 strings out of 468130
- 259009 string characters out of 5431117
- 859002 words of memory out of 5000000
- 40580 multiletter control sequences out of 15000+600000
- 633048 words of font info for 63 fonts, out of 8000000 for 9000
+ 12617 strings out of 468130
+ 265686 string characters out of 5431117
+ 817375 words of memory out of 5000000
+ 40943 multiletter control sequences out of 15000+600000
+ 634186 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,12n,80p,901b,918s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\ACER\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on main.pdf (18 pages, 298955 bytes).
+ <C:\Users\ACER\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on main.pdf (19 pages, 659755 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
+ 172 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

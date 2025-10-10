@@ -1,5 +1,7 @@
 \documentclass[10pt,a4paper,oneside,twocolumn]{article} 
+
 \usepackage[a4paper,margin=0.4in,includeheadfoot]{geometry}
+\usepackage{graphicx}
 \usepackage{amsmath} 
 \usepackage{listings}
 \usepackage{xcolor} 
@@ -45,13 +47,20 @@
 
 \setlength{\columnsep}{0.5in}   
 
-\title{Simple Sample} % Sets article title
-\author{My Name} % Sets authors name
-\date{\today} % Sets date for date compiled
+\title{
+    Teamnote of 2mic1cup \\ \vspace{1em}
+    \large swishy, lenhanbo, hungcubu \\ \vspace{1em}
+    \large Last upadted on \today \\ \vspace{1em}
+    \includegraphics[width=0.2\textwidth]{buttadog.png} \vspace{1em}
+    \hrule 
+}
 
+\date{}
 \begin{document}
 
+\maketitle
 \tableofcontents
+\newpage
 
 \setminted{linenos, numbersep=5pt, numbers=left, stepnumber=1, framesep=2mm, bgcolor=bgcol, fontsize=\footnotesize, linenos, breaklines, breakanywhere}
 \definecolor{bgcol}{HTML}{F9F6D5}
