@@ -1,12 +1,12 @@
-\documentclass[10pt,a4paper,oneside,twocolumn]{article} 
+\documentclass[8pt,a4paper,oneside,twocolumn]{extarticle} 
 
-\usepackage[a4paper,margin=0.4in,includeheadfoot]{geometry}
+\usepackage[a4paper,margin=0.3in,includeheadfoot]{geometry}
 \usepackage{graphicx}
 \usepackage{amsmath} 
 \usepackage{listings}
 \usepackage{xcolor} 
 \usepackage{xparse}
-\usepackage{multicol}
+\usepackage{multicol}   
 \usepackage{minted2}
 \usepackage{fontawesome5}
 \usepackage{fancyhdr}
@@ -46,12 +46,12 @@
 \usemintedstyle{gruvbox-light}
 \definecolor{bgcol}{HTML}{F9F6D5}
 
-\setlength{\columnsep}{0.5in}   
+\setlength{\columnsep}{0.3in}   
 
 \title{
     \colorbox{yellow}{\textbf{Teamnote of 2mic1cup}} \\ \vspace{1em}
     \large swishy, lenhanbo, hungcubu \\ \vspace{1em}
-    \large Lát updated on \today \\ \vspace{1em}
+    \large Last updated on \today \\ \vspace{1em}
     \includegraphics[width=0.2\textwidth]{buttadog.png} \vspace{1em}
     \hrule 
 }
@@ -79,6 +79,11 @@
     \item {$uid(a, b)$ returns random integer between $[a, b]$}
 \end{itemize}
 ]
+
+\algorithm{Hungbucu's amazing crazy diabolical template}
+{Bro only contribution}
+{cpp}{hungcubu/Template.cpp}
+
 
 \msection{Data Structure}
 \algorithm{Iterative Segment Tree}
@@ -395,8 +400,6 @@
     \begin{itemize}
         \item Returns where $p$ is as seen from $s$ towards $e$. 1/0/-1 $\Leftrightarrow$ left/on line/right.
         \item If the optional argument $eps$ is given 0 is returned if $p$ is within distance $eps$ from the line.
-        \item P is supposed to be Point<T> where T is e.g. double or long long.
-        \item It uses products in intermediate steps so watch out for overflow if using int or long long.
     \end{itemize}
 }
 {cpp}{kactl/CCW.cpp}
@@ -408,7 +411,7 @@
 {cpp}{kactl/CircleIntersection.cpp}
 
 \algorithm{Circle Line}{
-    Finds the intersection between a circle and a line. Returns a vector of either 0, 1, or 2 intersection points. P is intended to be Point<double>.
+    Finds the intersection between a circle and a line. Returns a vector of either 0, 1, or 2 intersection points.
 }
 [$\mathcal{O}(1)$]
 {cpp}{kactl/CircleLine.cpp}
@@ -420,10 +423,13 @@
 {cpp}{kactl/CirclePolygon.cpp}
 
 \algorithm{Circle Tagents}{
-    Finds the external tangents of two circles, or internal if r2 is negated. Can return 0, 1, or 2 tangents -- 0 if one circle contains the other (or overlaps it, in the internal case, or if the circles are the same);
+    \begin{itemize}
+        \item Finds the external tangents of two circles, or internal if r2 is negated.
+        \item Can return 0, 1, or 2 tangents -- 0 if one circle contains the other (or overlaps it, in the internal case, or if the circles are the same);
 1 if the circles are tangent to each other (in which case .first = .second and the tangent line is perpendicular to the line between the centers).
-.first and .second give the tangency points at circle 1 and 2 respectively.
-To find the tangents of a circle with a point set r2 to 0.
+        \item .first and .second give the tangency points at circle 1 and 2 respectively.
+        \item To find the tangents of a circle with a point set r2 to 0.
+    \end{itemize}
 }
 [$\mathcal{O}(1)$]
 {cpp}{kactl/CircleTangents.cpp}
@@ -456,7 +462,7 @@ To find the tangents of a circle with a point set r2 to 0.
 {cpp}{kactl/PointInsideHull.cpp}
 
 \algorithm{Point on Segment}{
-    Returns true iff p lies on the line segment from s to e. Use $segDist(s,e,p)<=epsilon$ instead when using Point<double>.
+    Returns true iff p lies on the line segment from s to e. Use $segDist(s,e,p)<=epsilon$ instead when using $Point<double>$.
 }
 [$\mathcal{O}(1)$]
 {cpp}{kactl/OnSegment.cpp}
@@ -495,5 +501,44 @@ To find the tangents of a circle with a point set r2 to 0.
 }
 [$\mathcal{O}(1)$]
 {cpp}{kactl/LineIntersection.cpp}
+
+\algorithm{Polygon Area}{
+    Returns twice the signed area of a polygon.
+}
+[$\mathcal{O}(n)$]
+{cpp}{kactl/PolygonArea.cpp}
+
+\algorithm{Polygon Cut}{
+    Returns a vector with the vertices of a polygon with everything to the left of the line going from s to e cut away.
+}
+[$\mathcal{O}(n)$]
+{cpp}{kactl/PolygonCut.cpp}
+
+\algorithm{Point inside Polygon}{
+    \begin{itemize}
+        \item Returns true if p lies within the polygon. If strict is true, it returns false for points on the boundary.
+        \item \textbf{NOTE:} Requires \textbf{7.12} and \textbf{7.2}.
+    \end{itemize}
+}
+[$\mathcal{O}(n)$]
+{cpp}{kactl/InsidePolygon.cpp}
+
+\algorithm{Manhattan MST}{
+    Given N points, returns up to $4*N$ edges, which are guaranteed to contain a minimum spanning tree for the graph with edge weights $w(p, q) = |p.x - q.x| + |p.y - q.y|$. Edges are in the form (distance, src, dst). Use a standard MST algorithm on the result to find the final MST.
+}
+[$\mathcal{O}(n)$]
+{cpp}{kactl/ManhattanMST.cpp}
+
+\msection{Notes}
+
+\subsection{Finding min cut}
+To build a min cut, once you have finished finding the max flow, bfs from source one more time. Edges that connect reached vertex and unreached vertex is considered a cut.
+
+\subsection{Finding minimum vertex cover on bipartite graph (Kőnig's theorem)}
+    \begin{itemize}
+        \item Size of maximum matching = Size of minimum vertex cover.
+        \item To build, use flow to find the maximum matching, and bfs from source one more time. The minimum vertex cover is the set of all vertices in the left partition that were not visited, combined with all vertices in the right partition that were visited.
+        \item The weighted version is the same, except the capacity of the edge from source/sink to a vertex is that vertex weight.
+    \end{itemize}
 
 \end{document} 

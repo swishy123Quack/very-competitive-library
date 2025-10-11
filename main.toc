@@ -1,68 +1,76 @@
 \contentsline {section}{\numberline {1}Helpers}{2}{}%
 \contentsline {subsection}{\numberline {1.1}Stress Tester}{2}{}%
 \contentsline {subsection}{\numberline {1.2}Random}{2}{}%
+\contentsline {subsection}{\numberline {1.3}Hungbucu's amazing crazy diabolical template}{2}{}%
 \contentsline {section}{\numberline {2}Data Structure}{2}{}%
 \contentsline {subsection}{\numberline {2.1}Iterative Segment Tree}{2}{}%
-\contentsline {subsection}{\numberline {2.2}Lazy Segment Tree}{2}{}%
+\contentsline {subsection}{\numberline {2.2}Lazy Segment Tree}{3}{}%
 \contentsline {subsection}{\numberline {2.3}Sparse Table}{3}{}%
 \contentsline {subsection}{\numberline {2.4}Implicit Treap}{3}{}%
 \contentsline {subsection}{\numberline {2.5}Dynamic Segment Tree}{4}{}%
-\contentsline {subsection}{\numberline {2.6}Persistent Segment Tree}{5}{}%
+\contentsline {subsection}{\numberline {2.6}Persistent Segment Tree}{4}{}%
 \contentsline {subsection}{\numberline {2.7}2D Fenwick Tree}{5}{}%
 \contentsline {subsection}{\numberline {2.8}Disjoint Set Union}{5}{}%
-\contentsline {subsection}{\numberline {2.9}Line Container}{6}{}%
+\contentsline {subsection}{\numberline {2.9}Line Container}{5}{}%
 \contentsline {subsection}{\numberline {2.10}Lichao Tree}{6}{}%
 \contentsline {subsection}{\numberline {2.11}Ordered Set}{6}{}%
-\contentsline {subsection}{\numberline {2.12}Minimum Stack/Deque}{7}{}%
-\contentsline {subsection}{\numberline {2.13}Dynamic Bitset}{7}{}%
-\contentsline {section}{\numberline {3}Graph}{7}{}%
-\contentsline {subsection}{\numberline {3.1}Graph}{7}{}%
-\contentsline {subsection}{\numberline {3.2}Strongly Connected Components}{8}{}%
-\contentsline {subsection}{\numberline {3.3}Bridges and Articulations}{8}{}%
-\contentsline {subsection}{\numberline {3.4}Two SAT}{9}{}%
-\contentsline {subsection}{\numberline {3.5}MCMF}{9}{}%
-\contentsline {subsection}{\numberline {3.6}Maximum Flow (Dinic)}{10}{}%
-\contentsline {subsection}{\numberline {3.7}Maximum Matching (Hopcroft Karp)}{11}{}%
-\contentsline {subsection}{\numberline {3.8}General Matching (Blossom)}{11}{}%
-\contentsline {section}{\numberline {4}Math}{12}{}%
-\contentsline {subsection}{\numberline {4.1}Modular Int}{12}{}%
-\contentsline {subsection}{\numberline {4.2}Modular Square Root}{12}{}%
-\contentsline {subsection}{\numberline {4.3}Discrete Log}{13}{}%
-\contentsline {subsection}{\numberline {4.4}Primite Root}{13}{}%
-\contentsline {subsection}{\numberline {4.5}Euler's Totient Funnction}{14}{}%
-\contentsline {subsection}{\numberline {4.6}Chinese Remainder Theorem}{14}{}%
-\contentsline {subsection}{\numberline {4.7}Extended Euclidean}{14}{}%
-\contentsline {subsection}{\numberline {4.8}Linear Diophantine}{14}{}%
-\contentsline {subsection}{\numberline {4.9}Matrix}{15}{}%
-\contentsline {subsection}{\numberline {4.10}Miller Rabin Primality Test}{15}{}%
-\contentsline {subsection}{\numberline {4.11}Fast Fourier Transform}{15}{}%
-\contentsline {subsection}{\numberline {4.12}OR Convolution}{16}{}%
-\contentsline {subsection}{\numberline {4.13}XOR Convolution}{16}{}%
-\contentsline {section}{\numberline {5}String}{17}{}%
-\contentsline {subsection}{\numberline {5.1}Rolling Hash}{17}{}%
-\contentsline {subsection}{\numberline {5.2}Z-Function}{17}{}%
-\contentsline {subsection}{\numberline {5.3}Prefix Function}{17}{}%
-\contentsline {subsection}{\numberline {5.4}Manacher's Algorithm}{17}{}%
-\contentsline {subsection}{\numberline {5.5}Aho-Corasick}{18}{}%
-\contentsline {section}{\numberline {6}Tree}{18}{}%
-\contentsline {subsection}{\numberline {6.1}Tree}{18}{}%
-\contentsline {subsection}{\numberline {6.2}Lowest Common Ancestor}{19}{}%
-\contentsline {subsection}{\numberline {6.3}Heavy Light Decomposition}{19}{}%
-\contentsline {subsection}{\numberline {6.4}Centroid Decomposition}{19}{}%
-\contentsline {section}{\numberline {7}Geometry (Kactl)}{20}{}%
-\contentsline {subsection}{\numberline {7.1}Kactl template}{20}{}%
-\contentsline {subsection}{\numberline {7.2}Point}{20}{}%
-\contentsline {subsection}{\numberline {7.3}CCW}{20}{}%
-\contentsline {subsection}{\numberline {7.4}Circle Intersection}{21}{}%
-\contentsline {subsection}{\numberline {7.5}Circle Line}{21}{}%
-\contentsline {subsection}{\numberline {7.6}Circle Polygon}{21}{}%
-\contentsline {subsection}{\numberline {7.7}Circle Tagents}{21}{}%
-\contentsline {subsection}{\numberline {7.8}Closest pair of points}{22}{}%
-\contentsline {subsection}{\numberline {7.9}Convex Hull}{22}{}%
-\contentsline {subsection}{\numberline {7.10}Hull Diameter}{22}{}%
-\contentsline {subsection}{\numberline {7.11}Point inside Hull}{22}{}%
-\contentsline {subsection}{\numberline {7.12}Point on Segment}{22}{}%
-\contentsline {subsection}{\numberline {7.13}Segment Distance}{23}{}%
-\contentsline {subsection}{\numberline {7.14}Segment Intersection}{23}{}%
-\contentsline {subsection}{\numberline {7.15}Line Distance}{23}{}%
-\contentsline {subsection}{\numberline {7.16}Line Intersection}{23}{}%
+\contentsline {subsection}{\numberline {2.12}Minimum Stack/Deque}{6}{}%
+\contentsline {subsection}{\numberline {2.13}Dynamic Bitset}{6}{}%
+\contentsline {section}{\numberline {3}Graph}{6}{}%
+\contentsline {subsection}{\numberline {3.1}Graph}{6}{}%
+\contentsline {subsection}{\numberline {3.2}Strongly Connected Components}{7}{}%
+\contentsline {subsection}{\numberline {3.3}Bridges and Articulations}{7}{}%
+\contentsline {subsection}{\numberline {3.4}Two SAT}{7}{}%
+\contentsline {subsection}{\numberline {3.5}MCMF}{8}{}%
+\contentsline {subsection}{\numberline {3.6}Maximum Flow (Dinic)}{8}{}%
+\contentsline {subsection}{\numberline {3.7}Maximum Matching (Hopcroft Karp)}{9}{}%
+\contentsline {subsection}{\numberline {3.8}General Matching (Blossom)}{9}{}%
+\contentsline {section}{\numberline {4}Math}{10}{}%
+\contentsline {subsection}{\numberline {4.1}Modular Int}{10}{}%
+\contentsline {subsection}{\numberline {4.2}Modular Square Root}{10}{}%
+\contentsline {subsection}{\numberline {4.3}Discrete Log}{10}{}%
+\contentsline {subsection}{\numberline {4.4}Primite Root}{10}{}%
+\contentsline {subsection}{\numberline {4.5}Euler's Totient Funnction}{11}{}%
+\contentsline {subsection}{\numberline {4.6}Chinese Remainder Theorem}{11}{}%
+\contentsline {subsection}{\numberline {4.7}Extended Euclidean}{11}{}%
+\contentsline {subsection}{\numberline {4.8}Linear Diophantine}{11}{}%
+\contentsline {subsection}{\numberline {4.9}Matrix}{11}{}%
+\contentsline {subsection}{\numberline {4.10}Miller Rabin Primality Test}{12}{}%
+\contentsline {subsection}{\numberline {4.11}Fast Fourier Transform}{12}{}%
+\contentsline {subsection}{\numberline {4.12}OR Convolution}{13}{}%
+\contentsline {subsection}{\numberline {4.13}XOR Convolution}{13}{}%
+\contentsline {section}{\numberline {5}String}{13}{}%
+\contentsline {subsection}{\numberline {5.1}Rolling Hash}{13}{}%
+\contentsline {subsection}{\numberline {5.2}Z-Function}{13}{}%
+\contentsline {subsection}{\numberline {5.3}Prefix Function}{13}{}%
+\contentsline {subsection}{\numberline {5.4}Manacher's Algorithm}{14}{}%
+\contentsline {subsection}{\numberline {5.5}Aho-Corasick}{14}{}%
+\contentsline {section}{\numberline {6}Tree}{14}{}%
+\contentsline {subsection}{\numberline {6.1}Tree}{14}{}%
+\contentsline {subsection}{\numberline {6.2}Lowest Common Ancestor}{14}{}%
+\contentsline {subsection}{\numberline {6.3}Heavy Light Decomposition}{15}{}%
+\contentsline {subsection}{\numberline {6.4}Centroid Decomposition}{15}{}%
+\contentsline {section}{\numberline {7}Geometry (Kactl)}{15}{}%
+\contentsline {subsection}{\numberline {7.1}Kactl template}{15}{}%
+\contentsline {subsection}{\numberline {7.2}Point}{15}{}%
+\contentsline {subsection}{\numberline {7.3}CCW}{16}{}%
+\contentsline {subsection}{\numberline {7.4}Circle Intersection}{16}{}%
+\contentsline {subsection}{\numberline {7.5}Circle Line}{16}{}%
+\contentsline {subsection}{\numberline {7.6}Circle Polygon}{16}{}%
+\contentsline {subsection}{\numberline {7.7}Circle Tagents}{16}{}%
+\contentsline {subsection}{\numberline {7.8}Closest pair of points}{16}{}%
+\contentsline {subsection}{\numberline {7.9}Convex Hull}{17}{}%
+\contentsline {subsection}{\numberline {7.10}Hull Diameter}{17}{}%
+\contentsline {subsection}{\numberline {7.11}Point inside Hull}{17}{}%
+\contentsline {subsection}{\numberline {7.12}Point on Segment}{17}{}%
+\contentsline {subsection}{\numberline {7.13}Segment Distance}{17}{}%
+\contentsline {subsection}{\numberline {7.14}Segment Intersection}{17}{}%
+\contentsline {subsection}{\numberline {7.15}Line Distance}{17}{}%
+\contentsline {subsection}{\numberline {7.16}Line Intersection}{18}{}%
+\contentsline {subsection}{\numberline {7.17}Polygon Area}{18}{}%
+\contentsline {subsection}{\numberline {7.18}Polygon Cut}{18}{}%
+\contentsline {subsection}{\numberline {7.19}Point inside Polygon}{18}{}%
+\contentsline {subsection}{\numberline {7.20}Manhattan MST}{18}{}%
+\contentsline {section}{\numberline {8}Notes}{18}{}%
+\contentsline {subsection}{\numberline {8.1}Finding min cut}{18}{}%
+\contentsline {subsection}{\numberline {8.2}Finding minimum vertex cover on bipartite graph (Kőnig's theorem)}{18}{}%

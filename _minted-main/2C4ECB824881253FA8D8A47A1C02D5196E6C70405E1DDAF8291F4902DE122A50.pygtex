@@ -1,0 +1,116 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}include}\PYG{+w}{         }\PYG{c+cpf}{\PYGZlt{}bits/stdc++.h\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}include}\PYG{+w}{ }\PYG{c+cpf}{\PYGZlt{}ext/pb\PYGZus{}ds/assoc\PYGZus{}container.hpp\PYGZgt{}}
+\PYG{+w}{ }
+\PYG{c+cp}{\PYGZsh{}define            TASK   \PYGZdq{}test\PYGZdq{}}
+\PYG{c+cp}{\PYGZsh{}define              ll   long long}
+\PYG{c+cp}{\PYGZsh{}define             ull   unsigned ll}
+\PYG{c+cp}{\PYGZsh{}define              db   long double}
+\PYG{c+cp}{\PYGZsh{}define             pLL   pair\PYGZlt{}ll, ll\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define             pLI   pair\PYGZlt{}ll, int\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define             pIL   pair\PYGZlt{}int, ll\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define             pII   pair\PYGZlt{}int, int\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define             vec   vector}
+\PYG{c+cp}{\PYGZsh{}define              vL   vec\PYGZlt{}ll\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define             vvL   vec\PYGZlt{}vL\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define              vI   vec\PYGZlt{}int\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define             vvI   vec\PYGZlt{}vI\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define            vvvI   vec\PYGZlt{}vvI\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define           vvvvI   vec\PYGZlt{}vvvI\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define              vD   vec\PYGZlt{}db\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define             vvD   vec\PYGZlt{}vD\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define             vLL   vec\PYGZlt{}pLL\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define             vLI   vec\PYGZlt{}pLI\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define             vIL   vec\PYGZlt{}pIL\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define             vII   vec\PYGZlt{}pII\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define            vvII   vec\PYGZlt{}vII\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define              vS   vec\PYGZlt{}string\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define             vvS   vec\PYGZlt{}vS\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define              vB   vec\PYGZlt{}bool\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define             vvB   vec\PYGZlt{}vB\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define            umap   unordered\PYGZus{}map}
+\PYG{c+cp}{\PYGZsh{}define          gphash   gp\PYGZus{}hash\PYGZus{}table}
+\PYG{c+cp}{\PYGZsh{}define            mset   multiset}
+\PYG{c+cp}{\PYGZsh{}define            pque   priority\PYGZus{}queue}
+\PYG{c+cp}{\PYGZsh{}define          all(a)   a.begin(), a.end()}
+\PYG{c+cp}{\PYGZsh{}define         rall(a)   a.rbegin(), a.rend()}
+\PYG{c+cp}{\PYGZsh{}define       stt(a, n)   a.begin(), a.begin() + n}
+\PYG{c+cp}{\PYGZsh{}define       stf(a, n)   a.begin() + n, a.end()}
+\PYG{c+cp}{\PYGZsh{}define              eb   emplace\PYGZus{}back}
+\PYG{c+cp}{\PYGZsh{}define              pb   push\PYGZus{}back}
+\PYG{c+cp}{\PYGZsh{}define              pf   push\PYGZus{}front}
+\PYG{c+cp}{\PYGZsh{}define            popb   pop\PYGZus{}back}
+\PYG{c+cp}{\PYGZsh{}define            popf   pop\PYGZus{}front}
+\PYG{c+cp}{\PYGZsh{}define             ins   insert}
+\PYG{c+cp}{\PYGZsh{}define             asg   assign}
+\PYG{c+cp}{\PYGZsh{}define             rev   reverse}
+\PYG{c+cp}{\PYGZsh{}define              fi   first}
+\PYG{c+cp}{\PYGZsh{}define              se   second}
+\PYG{c+cp}{\PYGZsh{}define              th   third}
+\PYG{c+cp}{\PYGZsh{}define              ub   upper\PYGZus{}bound}
+\PYG{c+cp}{\PYGZsh{}define              lb   lower\PYGZus{}bound}
+\PYG{c+cp}{\PYGZsh{}define             ite   iterator}
+\PYG{c+cp}{\PYGZsh{}define           fs(n)   fixed \PYGZlt{}\PYGZlt{} setprecision(n)}
+\PYG{+w}{ }
+\PYG{k}{using}\PYG{+w}{         }\PYG{k}{namespace}\PYG{+w}{   }\PYG{n+nn}{std}\PYG{p}{;}
+\PYG{k}{using}\PYG{+w}{         }\PYG{k}{namespace}\PYG{+w}{   }\PYG{n+nn}{\PYGZus{}\PYGZus{}gnu\PYGZus{}pbds}\PYG{p}{;}
+\PYG{+w}{ }
+\PYG{k}{const}\PYG{+w}{ }\PYG{n}{ll}\PYG{+w}{          }\PYG{n}{llINF}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{1e18}\PYG{p}{;}
+\PYG{k}{const}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{        }\PYG{n}{intINF}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{1e9}\PYG{p}{;}
+\PYG{k}{const}\PYG{+w}{ }\PYG{n}{ll}\PYG{+w}{            }\PYG{n}{MOD}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{1e9}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{7}\PYG{p}{;}
+\PYG{+w}{ }
+\PYG{k}{template}\PYG{o}{\PYGZlt{}}\PYG{+w}{   }\PYG{k}{class}\PYG{+w}{ }\PYG{n+nc}{T}\PYG{+w}{   }\PYG{o}{\PYGZgt{}}\PYG{+w}{   }
+\PYG{k}{using}\PYG{+w}{       }\PYG{n}{ordered\PYGZus{}set}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{tree}\PYG{o}{\PYGZlt{}}\PYG{n}{T}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{null\PYGZus{}type}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{less}\PYG{o}{\PYGZlt{}}\PYG{n}{T}\PYG{o}{\PYGZgt{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{rb\PYGZus{}tree\PYGZus{}tag}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{tree\PYGZus{}order\PYGZus{}statistics\PYGZus{}node\PYGZus{}update}\PYG{o}{\PYGZgt{}}\PYG{p}{;}
+\PYG{c+cp}{\PYGZsh{}define            oset   ordered\PYGZus{}set}
+\PYG{+w}{ }
+\PYG{k}{template}\PYG{o}{\PYGZlt{}}\PYG{+w}{     }\PYG{k}{class}\PYG{+w}{ }\PYG{n+nc}{A}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{              }\PYG{k}{class}\PYG{+w}{ }\PYG{n+nc}{B}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{              }\PYG{k}{class}\PYG{+w}{ }\PYG{n+nc}{C}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{   }\PYG{k}{struct}\PYG{+w}{ }\PYG{n+nc}{triple}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{A}\PYG{+w}{ }\PYG{n}{fi}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{B}\PYG{+w}{ }\PYG{n}{se}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{C}\PYG{+w}{ }\PYG{n}{th}\PYG{p}{;}
+\PYG{+w}{ }
+\PYG{+w}{    }\PYG{n}{triple}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}\PYGZcb{}}
+\PYG{+w}{    }\PYG{n}{triple}\PYG{p}{(}\PYG{n}{A}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{,}\PYG{n}{B}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{,}\PYG{n}{C}\PYG{+w}{ }\PYG{n}{c}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{ }\PYG{n}{fi}\PYG{p}{(}\PYG{n}{a}\PYG{p}{),}\PYG{+w}{ }\PYG{n}{se}\PYG{p}{(}\PYG{n}{b}\PYG{p}{),}\PYG{+w}{ }\PYG{n}{th}\PYG{p}{(}\PYG{n}{c}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}\PYGZcb{}}
+\PYG{p}{\PYGZcb{};}
+\PYG{c+cp}{\PYGZsh{}define            tIII   triple\PYGZlt{}int, int, int\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define            tLLL   triple\PYGZlt{}ll, ll, ll\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define            vIII   vec\PYGZlt{}tIII\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define           vvIII   vec\PYGZlt{}vIII\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define            vLLL   vec\PYGZlt{}tLLL\PYGZgt{}}
+\PYG{+w}{ }
+\PYG{n}{mt19937}\PYG{+w}{                   }\PYG{n+nf}{rd}\PYG{p}{(}\PYG{n}{chrono}\PYG{o}{::}\PYG{n}{high\PYGZus{}resolution\PYGZus{}clock}\PYG{o}{::}\PYG{n}{now}\PYG{p}{().}\PYG{n}{time\PYGZus{}since\PYGZus{}epoch}\PYG{p}{().}\PYG{n}{count}\PYG{p}{());}
+\PYG{n}{ll}\PYG{+w}{     }\PYG{n+nf}{Rand}\PYG{p}{(}\PYG{n}{ll}\PYG{+w}{ }\PYG{n}{L}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{ll}\PYG{+w}{ }\PYG{n}{R}\PYG{p}{)}\PYG{+w}{   }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{uniform\PYGZus{}int\PYGZus{}distribution}\PYG{o}{\PYGZlt{}}\PYG{n}{ll}\PYG{o}{\PYGZgt{}}\PYG{p}{(}\PYG{n}{L}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{R}\PYG{p}{)(}\PYG{n}{rd}\PYG{p}{);}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{ }
+\PYG{k+kr}{inline}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{     }\PYG{n+nf}{read}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{    }\PYG{k+kt}{char}\PYG{+w}{ }\PYG{n}{c}\PYG{p}{;}\PYG{+w}{    }\PYG{k}{while}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{c}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{getchar}\PYG{p}{(),}\PYG{+w}{ }\PYG{n}{c}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{+w}{ }\PYG{o}{||}\PYG{+w}{ }\PYG{n}{c}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}9\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{n}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{c}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{while}\PYG{+w}{            }\PYG{p}{(}\PYG{n}{c}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{getchar}\PYG{p}{(),}\PYG{+w}{ }\PYG{n}{c}\PYG{+w}{ }\PYG{o}{\PYGZgt{}=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{n}{c}\PYG{+w}{ }\PYG{o}{\PYGZlt{}=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}9\PYGZsq{}}\PYG{p}{)}\PYG{+w}{ }\PYG{n}{n}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{n}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{c}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{return}\PYG{+w}{         }\PYG{n}{n}\PYG{p}{;}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{ }
+\PYG{n}{vI}\PYG{+w}{          }\PYG{n}{prime}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{lpf}\PYG{p}{;}
+\PYG{k+kt}{void}\PYG{+w}{  }\PYG{n+nf}{primeSieve}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{)}\PYG{+w}{   }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n}{prime}\PYG{p}{.}\PYG{n}{asg}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{);}\PYG{+w}{ }\PYG{n}{lpf}\PYG{p}{.}\PYG{n}{asg}\PYG{p}{(}\PYG{n}{n}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{);}\PYG{+w}{ }\PYG{n}{lpf}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{lpf}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{                            }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{\PYGZlt{}=}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{+=}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{lpf}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n}{lpf}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{i}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{prime}\PYG{p}{.}\PYG{n}{pb}\PYG{p}{(}\PYG{n}{i}\PYG{p}{);}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }
+\PYG{+w}{                            }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{j}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{j}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{prime}\PYG{p}{.}\PYG{n}{size}\PYG{p}{()}\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{prime}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{\PYGZlt{}=}\PYG{+w}{ }\PYG{n}{n}\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{n}{prime}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{\PYGZlt{}=}\PYG{+w}{ }\PYG{n}{lpf}\PYG{p}{[}\PYG{n}{i}\PYG{p}{];}\PYG{+w}{ }\PYG{o}{++}\PYG{+w}{ }\PYG{n}{j}\PYG{p}{)}\PYG{+w}{ }\PYG{n}{lpf}\PYG{p}{[}\PYG{n}{i}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{prime}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{prime}\PYG{p}{[}\PYG{n}{j}\PYG{p}{];}\PYG{+w}{ }
+\PYG{+w}{                          }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\PYG{n}{vvI}\PYG{+w}{                }\PYG{n}{dvs}\PYG{p}{;}
+\PYG{k+kt}{void}\PYG{+w}{    }\PYG{n+nf}{dvsSieve}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{)}\PYG{+w}{   }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n}{dvs}\PYG{p}{.}\PYG{n}{asg}\PYG{p}{(}\PYG{n}{n}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{vI}\PYG{p}{());}
+\PYG{+w}{                            }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{\PYGZlt{}=}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{++}\PYG{+w}{ }\PYG{n}{i}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                            }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{j}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{i}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{j}\PYG{+w}{ }\PYG{o}{\PYGZlt{}=}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{j}\PYG{+w}{ }\PYG{o}{+=}\PYG{+w}{ }\PYG{n}{i}\PYG{p}{)}\PYG{+w}{ }
+\PYG{+w}{                            }\PYG{n}{dvs}\PYG{p}{[}\PYG{n}{j}\PYG{p}{].}\PYG{n}{pb}\PYG{p}{(}\PYG{n}{i}\PYG{p}{);}\PYG{+w}{  }
+\PYG{+w}{                          }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{ }
+\PYG{k}{template}\PYG{o}{\PYGZlt{}}\PYG{+w}{   }\PYG{k}{class}\PYG{+w}{ }\PYG{n+nc}{T}\PYG{+w}{   }\PYG{o}{\PYGZgt{}}\PYG{+w}{   }\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{maximize}\PYG{p}{(}\PYG{n}{T}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{T}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{b}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{a}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }\PYG{k}{return}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\PYG{k}{template}\PYG{o}{\PYGZlt{}}\PYG{+w}{   }\PYG{k}{class}\PYG{+w}{ }\PYG{n+nc}{T}\PYG{+w}{   }\PYG{o}{\PYGZgt{}}\PYG{+w}{   }\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{minimize}\PYG{p}{(}\PYG{n}{T}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{T}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{b}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{a}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }\PYG{k}{return}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{ }
+\PYG{n}{ll}\PYG{+w}{      }\PYG{n}{gcd}\PYG{p}{(}\PYG{n}{ll}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{ll}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{)}\PYG{+w}{   }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{b}\PYG{+w}{ }\PYG{o}{?}\PYG{+w}{ }\PYG{n}{gcd}\PYG{p}{(}\PYG{n}{b}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{a}\PYG{+w}{ }\PYG{o}{\PYGZpc{}}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{;}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\PYG{n}{ll}\PYG{+w}{      }\PYG{n}{lcm}\PYG{p}{(}\PYG{n}{ll}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{ll}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{)}\PYG{+w}{   }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{a}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{n}{gcd}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{;}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{ }
+\PYG{n}{ll}\PYG{+w}{  }\PYG{n}{fastPow}\PYG{p}{(}\PYG{n}{ll}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{ll}\PYG{+w}{ }\PYG{n}{p}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n}{ll}\PYG{+w}{ }\PYG{n}{m}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{MOD}\PYG{p}{)}\PYG{+w}{   }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n}{ll}\PYG{+w}{ }\PYG{n}{r}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{n}\PYG{+w}{ }\PYG{o}{\PYGZpc{}=}\PYG{+w}{ }\PYG{n}{m}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{p}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{p}\PYG{+w}{ }\PYG{o}{\PYGZgt{}\PYGZgt{}=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{p}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{r}\PYG{+w}{ }\PYG{o}{*=}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZpc{}=}\PYG{+w}{ }\PYG{n}{m}\PYG{p}{;}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{n}\PYG{+w}{ }\PYG{o}{*=}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZpc{}=}\PYG{+w}{ }\PYG{n}{m}\PYG{p}{;}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{r}\PYG{p}{;}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\PYG{n}{ll}\PYG{+w}{         }\PYG{n}{invMod}\PYG{p}{(}\PYG{n}{ll}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{,}\PYG{+w}{ }
+\PYG{+w}{            }\PYG{n}{ll}\PYG{+w}{ }\PYG{n}{m}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{MOD}\PYG{p}{)}\PYG{+w}{   }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{fastPow}\PYG{p}{(}\PYG{n}{n}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{m}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{m}\PYG{p}{);}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{ }
+\PYG{n}{ll}\PYG{+w}{          }\PYG{n}{mask}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{i}\PYG{p}{)}\PYG{+w}{   }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{o}{?}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{1L}\PYG{n}{L}\PYG{+w}{ }\PYG{o}{\PYGZlt{}\PYGZlt{}}\PYG{+w}{ }\PYG{n}{i}\PYG{p}{;}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{bool}\PYG{+w}{   }\PYG{n}{bit}\PYG{p}{(}\PYG{n}{ll}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{i}\PYG{p}{)}\PYG{+w}{   }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{n}\PYG{+w}{ }\PYG{o}{\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{l+m+mf}{1L}\PYG{n}{L}\PYG{p}{;}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\PYG{c+cp}{\PYGZsh{}define        popcount   \PYGZus{}\PYGZus{}builtin\PYGZus{}popcountll}
+\PYG{c+cp}{\PYGZsh{}define             clz   \PYGZus{}\PYGZus{}builtin\PYGZus{}clzll}
+\PYG{c+cp}{\PYGZsh{}define             ctz   \PYGZus{}\PYGZus{}builtin\PYGZus{}ctzll}
+\end{Verbatim}
