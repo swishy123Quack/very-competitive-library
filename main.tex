@@ -44,13 +44,14 @@
 }
 
 \usemintedstyle{gruvbox-light}
+\definecolor{bgcol}{HTML}{F9F6D5}
 
 \setlength{\columnsep}{0.5in}   
 
 \title{
-    Teamnote of 2mic1cup \\ \vspace{1em}
+    \colorbox{yellow}{\textbf{Teamnote of 2mic1cup}} \\ \vspace{1em}
     \large swishy, lenhanbo, hungcubu \\ \vspace{1em}
-    \large Last upadted on \today \\ \vspace{1em}
+    \large Lát updated on \today \\ \vspace{1em}
     \includegraphics[width=0.2\textwidth]{buttadog.png} \vspace{1em}
     \hrule 
 }
@@ -63,7 +64,6 @@
 \newpage
 
 \setminted{linenos, numbersep=5pt, numbers=left, stepnumber=1, framesep=2mm, bgcolor=bgcol, fontsize=\footnotesize, linenos, breaklines, breakanywhere}
-\definecolor{bgcol}{HTML}{F9F6D5}
 
 \msection{Helpers}
 
@@ -190,11 +190,6 @@
     Helper class, some implementations below will use this.
 }
 {cpp}{swishy/Graph.cpp}
-
-\algorithm{Tree}{
-    Helper class, some implementations below will use this.
-}
-{cpp}{swishy/Tree.cpp}
 
 \algorithm{Strongly Connected Components}{
     Find strongly connected components, compress the graph if needed
@@ -358,5 +353,147 @@
 }
 [$\mathcal{O}(M*K)$, where $M$ is the number of nodes in the \texttt{Trie}, and $K$ is the alphabet size]
 {cpp}{swishy/AhoCorasick.cpp}
+
+\msection{Tree}
+
+\algorithm{Tree}{
+    Helper class, some implementations below will use this.
+}
+{cpp}{swishy/Tree.cpp}
+
+\algorithm{Lowest Common Ancestor}{
+    Uses binary lifting to find the k-th parent of a node.
+}
+[$\mathcal{O}(n\log n)$ for build, $\mathcal{O}(\log n)$ for query]
+{cpp}{swishy/LCA.cpp}
+
+\algorithm{Heavy Light Decomposition}{
+    Clean implementation of HLD, only uses 1 segment, $pos[u]$ is the position of $u$ on the segment. Change the query function if needed, for now it's just max query using a segment tree
+}
+[$\mathcal{O}(n\log n)$ for build, $\mathcal{O}(\log^2 n)$ for query]
+{cpp}{swishy/HLD.cpp}
+
+\algorithm{Centroid Decomposition}{
+    Uses the centroid of a tree to decompose into smaller subtrees, each node will be recursively decomposed in $\mathcal{O}(log)$ times.
+}
+[$\mathcal{O}(n\log n)$]
+{cpp}{swishy/Centroid.cpp}
+
+\msection{Geometry (Kactl)}
+
+\algorithm{Kactl template}{
+    Kactl implementation sometimes use their own template, reference this for clarity.
+}
+{cpp}{kactl/Template.cpp}
+
+\algorithm{Point}{
+    Helper class, some implementations below will use this.
+}
+{cpp}{kactl/Point.cpp}
+
+\algorithm{CCW}{
+    \begin{itemize}
+        \item Returns where $p$ is as seen from $s$ towards $e$. 1/0/-1 $\Leftrightarrow$ left/on line/right.
+        \item If the optional argument $eps$ is given 0 is returned if $p$ is within distance $eps$ from the line.
+        \item P is supposed to be Point<T> where T is e.g. double or long long.
+        \item It uses products in intermediate steps so watch out for overflow if using int or long long.
+    \end{itemize}
+}
+{cpp}{kactl/CCW.cpp}
+
+\algorithm{Circle Intersection}{
+    Computes the pair of points at which two circles intersect. Returns false in case of no intersection.
+}
+[$\mathcal{O}(1)$]
+{cpp}{kactl/CircleIntersection.cpp}
+
+\algorithm{Circle Line}{
+    Finds the intersection between a circle and a line. Returns a vector of either 0, 1, or 2 intersection points. P is intended to be Point<double>.
+}
+[$\mathcal{O}(1)$]
+{cpp}{kactl/CircleLine.cpp}
+
+\algorithm{Circle Polygon}{
+    Returns the area of the intersection of a circle with a ccw polygon.
+}
+[$\mathcal{O}(n)$]
+{cpp}{kactl/CirclePolygon.cpp}
+
+\algorithm{Circle Tagents}{
+    Finds the external tangents of two circles, or internal if r2 is negated. Can return 0, 1, or 2 tangents -- 0 if one circle contains the other (or overlaps it, in the internal case, or if the circles are the same);
+1 if the circles are tangent to each other (in which case .first = .second and the tangent line is perpendicular to the line between the centers).
+.first and .second give the tangency points at circle 1 and 2 respectively.
+To find the tangents of a circle with a point set r2 to 0.
+}
+[$\mathcal{O}(1)$]
+{cpp}{kactl/CircleTangents.cpp}
+
+\algorithm{Closest pair of points}{
+    Finds the closest pair of points.
+}
+[$\mathcal{O}(n \log n)$]
+{cpp}{kactl/ClosestPair.cpp}
+
+\algorithm{Convex Hull}{
+    Returns a vector of the points of the convex hull in counter-clockwise order. Points on the edge of the hull between two other points are not considered part of the hull.
+}
+[$\mathcal{O}(n \log n)$]
+{cpp}{kactl/ConvexHull.cpp}
+
+\algorithm{Hull Diameter}{
+    Returns the two points with max distance on a convex hull (ccw, no duplicate/collinear points).
+}
+[$\mathcal{O}(n)$]
+{cpp}{kactl/HullDiameter.cpp}
+
+\algorithm{Point inside Hull}{
+    \begin{itemize}
+        \item Determine whether a point t lies inside a convex hull (CCW order, with no collinear points). Returns true if point lies within the hull. If strict is true, points on the boundary aren't included.
+        \item \textbf{NOTE:} Requires \textbf{7.12} and \textbf{7.2}.
+    \end{itemize}
+}
+[$\mathcal{O}(\log n)$]
+{cpp}{kactl/PointInsideHull.cpp}
+
+\algorithm{Point on Segment}{
+    Returns true iff p lies on the line segment from s to e. Use $segDist(s,e,p)<=epsilon$ instead when using Point<double>.
+}
+[$\mathcal{O}(1)$]
+{cpp}{kactl/OnSegment.cpp}
+
+\algorithm{Segment Distance}{
+    Returns the shortest distance between point p and the line segment from point s to e.
+}
+[$\mathcal{O}(1)$]
+{cpp}{kactl/OnSegment.cpp}
+
+\algorithm{Segment Intersection}{
+    \begin{itemize}
+        \item If a unique intersection point between the line segments going from s1 to e1 and from s2 to e2 exists then it is returned.
+        \item If no intersection point exists an empty vector is returned.
+        \item If infinitely many exist a vector with 2 elements is returned, containing the endpoints of the common line segment.
+        \item \textbf{NOTE:} Requires \textbf{7.12}.
+    \end{itemize}
+}
+[$\mathcal{O}(1)$]
+{cpp}{kactl/SegmentIntersection.cpp}
+
+\algorithm{Line Distance}{
+    \begin{itemize}
+        \item Returns the signed distance between point p and the line containing points a and b.
+        \item Positive value on left side and negative on right as seen from a towards b. a==b gives nan.
+    \end{itemize}
+}
+[$\mathcal{O}(1)$]
+{cpp}{kactl/LineDistance.cpp}
+
+\algorithm{Line Intersection}{
+    \begin{itemize}
+        \item If a unique intersection point of the lines going through s1,e1 and s2,e2 exists \{1, point\} is returned.
+        \item If no intersection point exists \{0, (0,0)\} is returned and if infinitely many exists \{-1, (0,0)\} is returned.
+    \end{itemize}
+}
+[$\mathcal{O}(1)$]
+{cpp}{kactl/LineIntersection.cpp}
 
 \end{document} 

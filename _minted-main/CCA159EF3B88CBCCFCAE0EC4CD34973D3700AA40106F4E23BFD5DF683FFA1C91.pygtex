@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}define rep(i, a, b) for(int i = a; i \PYGZlt{} (b); ++i)}
+\PYG{c+cp}{\PYGZsh{}define all(x) begin(x), end(x)}
+\PYG{c+cp}{\PYGZsh{}define sz(x) (int)(x).size()}
+\PYG{k}{typedef}\PYG{+w}{ }\PYG{k+kt}{long}\PYG{+w}{ }\PYG{k+kt}{long}\PYG{+w}{ }\PYG{n}{ll}\PYG{p}{;}
+\PYG{k}{typedef}\PYG{+w}{ }\PYG{n}{pair}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{pii}\PYG{p}{;}
+\PYG{k}{typedef}\PYG{+w}{ }\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{vi}\PYG{p}{;}
+\end{Verbatim}

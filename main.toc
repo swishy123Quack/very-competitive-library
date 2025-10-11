@@ -17,31 +17,52 @@
 \contentsline {subsection}{\numberline {2.13}Dynamic Bitset}{7}{}%
 \contentsline {section}{\numberline {3}Graph}{7}{}%
 \contentsline {subsection}{\numberline {3.1}Graph}{7}{}%
-\contentsline {subsection}{\numberline {3.2}Tree}{8}{}%
-\contentsline {subsection}{\numberline {3.3}Strongly Connected Components}{8}{}%
-\contentsline {subsection}{\numberline {3.4}Bridges and Articulations}{9}{}%
-\contentsline {subsection}{\numberline {3.5}Two SAT}{9}{}%
-\contentsline {subsection}{\numberline {3.6}MCMF}{10}{}%
-\contentsline {subsection}{\numberline {3.7}Maximum Flow (Dinic)}{10}{}%
-\contentsline {subsection}{\numberline {3.8}Maximum Matching (Hopcroft Karp)}{11}{}%
-\contentsline {subsection}{\numberline {3.9}General Matching (Blossom)}{12}{}%
+\contentsline {subsection}{\numberline {3.2}Strongly Connected Components}{8}{}%
+\contentsline {subsection}{\numberline {3.3}Bridges and Articulations}{8}{}%
+\contentsline {subsection}{\numberline {3.4}Two SAT}{9}{}%
+\contentsline {subsection}{\numberline {3.5}MCMF}{9}{}%
+\contentsline {subsection}{\numberline {3.6}Maximum Flow (Dinic)}{10}{}%
+\contentsline {subsection}{\numberline {3.7}Maximum Matching (Hopcroft Karp)}{11}{}%
+\contentsline {subsection}{\numberline {3.8}General Matching (Blossom)}{11}{}%
 \contentsline {section}{\numberline {4}Math}{12}{}%
 \contentsline {subsection}{\numberline {4.1}Modular Int}{12}{}%
-\contentsline {subsection}{\numberline {4.2}Modular Square Root}{13}{}%
+\contentsline {subsection}{\numberline {4.2}Modular Square Root}{12}{}%
 \contentsline {subsection}{\numberline {4.3}Discrete Log}{13}{}%
-\contentsline {subsection}{\numberline {4.4}Primite Root}{14}{}%
+\contentsline {subsection}{\numberline {4.4}Primite Root}{13}{}%
 \contentsline {subsection}{\numberline {4.5}Euler's Totient Funnction}{14}{}%
 \contentsline {subsection}{\numberline {4.6}Chinese Remainder Theorem}{14}{}%
 \contentsline {subsection}{\numberline {4.7}Extended Euclidean}{14}{}%
-\contentsline {subsection}{\numberline {4.8}Linear Diophantine}{15}{}%
+\contentsline {subsection}{\numberline {4.8}Linear Diophantine}{14}{}%
 \contentsline {subsection}{\numberline {4.9}Matrix}{15}{}%
 \contentsline {subsection}{\numberline {4.10}Miller Rabin Primality Test}{15}{}%
-\contentsline {subsection}{\numberline {4.11}Fast Fourier Transform}{16}{}%
+\contentsline {subsection}{\numberline {4.11}Fast Fourier Transform}{15}{}%
 \contentsline {subsection}{\numberline {4.12}OR Convolution}{16}{}%
-\contentsline {subsection}{\numberline {4.13}XOR Convolution}{17}{}%
+\contentsline {subsection}{\numberline {4.13}XOR Convolution}{16}{}%
 \contentsline {section}{\numberline {5}String}{17}{}%
 \contentsline {subsection}{\numberline {5.1}Rolling Hash}{17}{}%
 \contentsline {subsection}{\numberline {5.2}Z-Function}{17}{}%
-\contentsline {subsection}{\numberline {5.3}Prefix Function}{18}{}%
-\contentsline {subsection}{\numberline {5.4}Manacher's Algorithm}{18}{}%
+\contentsline {subsection}{\numberline {5.3}Prefix Function}{17}{}%
+\contentsline {subsection}{\numberline {5.4}Manacher's Algorithm}{17}{}%
 \contentsline {subsection}{\numberline {5.5}Aho-Corasick}{18}{}%
+\contentsline {section}{\numberline {6}Tree}{18}{}%
+\contentsline {subsection}{\numberline {6.1}Tree}{18}{}%
+\contentsline {subsection}{\numberline {6.2}Lowest Common Ancestor}{19}{}%
+\contentsline {subsection}{\numberline {6.3}Heavy Light Decomposition}{19}{}%
+\contentsline {subsection}{\numberline {6.4}Centroid Decomposition}{19}{}%
+\contentsline {section}{\numberline {7}Geometry (Kactl)}{20}{}%
+\contentsline {subsection}{\numberline {7.1}Kactl template}{20}{}%
+\contentsline {subsection}{\numberline {7.2}Point}{20}{}%
+\contentsline {subsection}{\numberline {7.3}CCW}{20}{}%
+\contentsline {subsection}{\numberline {7.4}Circle Intersection}{21}{}%
+\contentsline {subsection}{\numberline {7.5}Circle Line}{21}{}%
+\contentsline {subsection}{\numberline {7.6}Circle Polygon}{21}{}%
+\contentsline {subsection}{\numberline {7.7}Circle Tagents}{21}{}%
+\contentsline {subsection}{\numberline {7.8}Closest pair of points}{22}{}%
+\contentsline {subsection}{\numberline {7.9}Convex Hull}{22}{}%
+\contentsline {subsection}{\numberline {7.10}Hull Diameter}{22}{}%
+\contentsline {subsection}{\numberline {7.11}Point inside Hull}{22}{}%
+\contentsline {subsection}{\numberline {7.12}Point on Segment}{22}{}%
+\contentsline {subsection}{\numberline {7.13}Segment Distance}{23}{}%
+\contentsline {subsection}{\numberline {7.14}Segment Intersection}{23}{}%
+\contentsline {subsection}{\numberline {7.15}Line Distance}{23}{}%
+\contentsline {subsection}{\numberline {7.16}Line Intersection}{23}{}%
