@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.9)  11 OCT 2025 18:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.9)  8 NOV 2025 17:14
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -485,7 +485,7 @@ LaTeX Warning: No \author given.
 (main.toc
 
 
-Underfull \hbox (badness 3199) in paragraph at lines 76--76
+Underfull \hbox (badness 3199) in paragraph at lines 77--77
  [][] []\OT1/cmr/m/n/8 Finding min-i-mum ver-tex cover on bi-par-tite graph 
  []
 
@@ -544,70 +544,76 @@ LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on in
 
 [11] (_minted-main/B8C70305868F420EFB231F271F246036D98E26383CFA1259093836F6E6293429.pygtex) (_minted-main/8F781E19E704A34E816C02B39AFA378FA6CC81D49D877F917CC2F2D4BF4590C7.pygtex)
 
-(_minted-main/3FAD9FC6F8EAF362BF9352FCD1CC088D909E7FECE700CAE1141D022AE3DAAB06.pygtex)
+(_minted-main/5C0BB1F332CE6805CBE9C4DB855AFBEB9672BAB4A2AC97BA0EE07A21613540B2.pygtex) (_minted-main/3FAD9FC6F8EAF362BF9352FCD1CC088D909E7FECE700CAE1141D022AE3DAAB06.pygtex)
 
-[12] (_minted-main/659A97DE03895399174E4C8E536189119D39EA277D3DB23E2A2B64B0B5F46C84.pygtex) (_minted-main/56884F434FDA0BE52504C6AAEB48F482253DEEAA1048BD258C1969A3110851B8.pygtex)
+[12] (_minted-main/C2C4FC19FD3E4DD41117C1D74410C55F9D39EA277D3DB23E2A2B64B0B5F46C84.pygtex)
 
-(_minted-main/E77AFFC78C77E9DFB57E69A76E97B3A7A1D764B19464050DC7614B6CB6521A70.pygtex) (_minted-main/EAFA89ACC3F7EFF5DD12EC9CFFA77F45A4BF3D5237FFCD49AD0544594FFA7E85.pygtex) (_minted-main/1C2E4F04973542436A39F73D308C24D738D203D06F74F0732DCB10A22287DB10.pygtex)
+(_minted-main/56884F434FDA0BE52504C6AAEB48F482253DEEAA1048BD258C1969A3110851B8.pygtex) (_minted-main/E77AFFC78C77E9DFB57E69A76E97B3A7A1D764B19464050DC7614B6CB6521A70.pygtex)
 
-[13] (_minted-main/F6917B9D6F08490F59F1115C3DE75DAD9725ED3A5E18CFB8A24563BB54E7A179.pygtex)
+[13] (_minted-main/EAFA89ACC3F7EFF5DD12EC9CFFA77F45A4BF3D5237FFCD49AD0544594FFA7E85.pygtex) (_minted-main/1C2E4F04973542436A39F73D308C24D738D203D06F74F0732DCB10A22287DB10.pygtex) (_minted-main/F6917B9D6F08490F59F1115C3DE75DAD9725ED3A5E18CFB8A24563BB54E7A179.pygtex)
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 361.
- (_minted-main/4524375C825DC405E7C1A050430AB93D9159C7792940F23AB6C1C4914B1E6354.pygtex)
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 367.
 
-(_minted-main/873BE2F83046B5F1E2847858B9A777E93289DEA304BD41C2EA05EAF72E5BC2FB.pygtex) (_minted-main/B6FC1B284DD7B4C606FD2D18897106ED9B8FFBB2A04D8C7F51BC0804B2D8A163.pygtex)
 
-[14] (_minted-main/7983E8D921EBE24F25BAD851331DD214CDA7E8021D7319DFA2FD2E4416562404.pygtex)
+(_minted-main/4524375C825DC405E7C1A050430AB93D9159C7792940F23AB6C1C4914B1E6354.pygtex) (_minted-main/873BE2F83046B5F1E2847858B9A777E93289DEA304BD41C2EA05EAF72E5BC2FB.pygtex)
 
-(_minted-main/A64B89BA2054A6A875167A175A86838D442B327FC29E5DD10E242B025A7F2191.pygtex) (_minted-main/CCA159EF3B88CBCCFCAE0EC4CD34973D3700AA40106F4E23BFD5DF683FFA1C91.pygtex) (_minted-main/30DD8C28A19820C8C5CAB0F941460DE21D0E5463F9924593A917EFD3D66EFB93.pygtex)
+[14] (_minted-main/B6FC1B284DD7B4C606FD2D18897106ED9B8FFBB2A04D8C7F51BC0804B2D8A163.pygtex) (_minted-main/7983E8D921EBE24F25BAD851331DD214CDA7E8021D7319DFA2FD2E4416562404.pygtex)
 
-[15] (_minted-main/3C3AE3471E94B2A5478D0E91B2162EB92F0AA7F5581752BE2B40AF7CA4B5F020.pygtex) (_minted-main/E18A9906B7AA87894498CFDF6D59B0DB0207A03EC1F6FCCBA68E1B341EE7EC25.pygtex) (_minted-main/19D77A61641BB6100E47930A09D3649CBDD226A0127D4C22BCA1F72E696D55EE.pygtex)
+(_minted-main/A64B89BA2054A6A875167A175A86838D442B327FC29E5DD10E242B025A7F2191.pygtex)
 
-(_minted-main/7A6B0AECE3002E39D081E05F6FB835803184C187DA4B7AD8A0354FC961A64C11.pygtex) (_minted-main/B8CA12A0BB5FDD8C8CCF2374A9C18662C3173F7427F22F5F472F91415AFB9A22.pygtex) (_minted-main/8D6F8C3CA723972CFA31B45B103CAAA8103B2B1FD08049E0A3B1C96C6F1A0A78.pygtex)
+[15] (_minted-main/CCA159EF3B88CBCCFCAE0EC4CD34973D3700AA40106F4E23BFD5DF683FFA1C91.pygtex) (_minted-main/30DD8C28A19820C8C5CAB0F941460DE21D0E5463F9924593A917EFD3D66EFB93.pygtex) (_minted-main/3C3AE3471E94B2A5478D0E91B2162EB92F0AA7F5581752BE2B40AF7CA4B5F020.pygtex)
 
-[16] (_minted-main/38D5D59A2DBDA52AB4328DD3FB1EC39D36C0B1F045B92F08480A0BEAA6B6C937.pygtex) (_minted-main/62D90322E741513A1A2B9260499F53ACDC85DB8E376E9E7A0CE748C1D965650A.pygtex) (_minted-main/0DD48217C008A16DA64BD71A0A4452127F8CD04F01F74D7C45A3DA682FD5CF78.pygtex)
-Underfull \hbox (badness 1163) in paragraph at lines 469--469
+(_minted-main/E18A9906B7AA87894498CFDF6D59B0DB0207A03EC1F6FCCBA68E1B341EE7EC25.pygtex) (_minted-main/19D77A61641BB6100E47930A09D3649CBDD226A0127D4C22BCA1F72E696D55EE.pygtex) (_minted-main/7A6B0AECE3002E39D081E05F6FB835803184C187DA4B7AD8A0354FC961A64C11.pygtex)
+
+[16] (_minted-main/B8CA12A0BB5FDD8C8CCF2374A9C18662C3173F7427F22F5F472F91415AFB9A22.pygtex) (_minted-main/8D6F8C3CA723972CFA31B45B103CAAA8103B2B1FD08049E0A3B1C96C6F1A0A78.pygtex) (_minted-main/38D5D59A2DBDA52AB4328DD3FB1EC39D36C0B1F045B92F08480A0BEAA6B6C937.pygtex)
+
+(_minted-main/62D90322E741513A1A2B9260499F53ACDC85DB8E376E9E7A0CE748C1D965650A.pygtex) (_minted-main/0DD48217C008A16DA64BD71A0A4452127F8CD04F01F74D7C45A3DA682FD5CF78.pygtex)
+Underfull \hbox (badness 1163) in paragraph at lines 475--475
 \OT1/cmr/m/n/8 Returns true iff p lies on the line seg-ment from s to e. Use
  []
 
+(_minted-main/66BB70593CE9D67E34FBE679BF990FF0A817428D1B21AC3F3B69F1FC00E15FD7.pygtex) (_minted-main/66BB70593CE9D67E34FBE679BF990FF0A817428D1B21AC3F3B69F1FC00E15FD7.pygtex)
 
-
-(_minted-main/66BB70593CE9D67E34FBE679BF990FF0A817428D1B21AC3F3B69F1FC00E15FD7.pygtex) (_minted-main/66BB70593CE9D67E34FBE679BF990FF0A817428D1B21AC3F3B69F1FC00E15FD7.pygtex) (_minted-main/CB299ED6DAF200D6EFA58DE99786CE1E63583839307E8A73F5B9E2EF428AD0A1.pygtex) (_minted-main/DAE33C5EC98CE2AB100471D701A362048308F253EDD80F95153AAFFC4286099B.pygtex)
-
-[17]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 504.
+[17] (_minted-main/CB299ED6DAF200D6EFA58DE99786CE1E63583839307E8A73F5B9E2EF428AD0A1.pygtex) (_minted-main/DAE33C5EC98CE2AB100471D701A362048308F253EDD80F95153AAFFC4286099B.pygtex)
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 510.
  (C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 504.
- (_minted-main/4BEFD0A2D743C094A57C611AD5CD0D801B9878BED54514F8FB6972A3E7FAD2F6.pygtex) (_minted-main/C89064BAF5191CAC27C40A250CEF4DEE6389DB64787CF874F540F5498E41CBC7.pygtex) (_minted-main/2C0138248D864D9D122CC492621C1C1051B7134E918E97C8E872FBA9AA310C49.pygtex)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 510.
+ (_minted-main/4BEFD0A2D743C094A57C611AD5CD0D801B9878BED54514F8FB6972A3E7FAD2F6.pygtex)
 
-(_minted-main/02A35D881B5576139B2214E2ED538B7CE8131C1F3BBB8C57274A9B9D6F517315.pygtex) (_minted-main/05EA56B3D19AF0D47FAD0D0B329D48024CAA3F33E5A742A242D8C35319052E56.pygtex)
-Underfull \hbox (badness 1052) in paragraph at lines 537--537
+(_minted-main/C89064BAF5191CAC27C40A250CEF4DEE6389DB64787CF874F540F5498E41CBC7.pygtex) (_minted-main/2C0138248D864D9D122CC492621C1C1051B7134E918E97C8E872FBA9AA310C49.pygtex) (_minted-main/02A35D881B5576139B2214E2ED538B7CE8131C1F3BBB8C57274A9B9D6F517315.pygtex) (_minted-main/05EA56B3D19AF0D47FAD0D0B329D48024CAA3F33E5A742A242D8C35319052E56.pygtex)
+
+[18]
+Underfull \hbox (badness 1052) in paragraph at lines 543--543
 []\OT1/cmr/bx/n/10 Finding min-i-mum ver-tex cover on bi-par-tite
  []
 
 
 
-[18] (main.aux)
+
+
+[19
+
+] (main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 12829 strings out of 468130
- 283815 string characters out of 5431117
- 812946 words of memory out of 5000000
- 41079 multiletter control sequences out of 15000+600000
+ 12836 strings out of 468130
+ 284470 string characters out of 5431117
+ 812997 words of memory out of 5000000
+ 41083 multiletter control sequences out of 15000+600000
  633359 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,12n,80p,1155b,953s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ACER\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0800.pk><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/ACER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on main.pdf (18 pages, 662411 bytes).
+Output written on main.pdf (19 pages, 665060 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
+ 162 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

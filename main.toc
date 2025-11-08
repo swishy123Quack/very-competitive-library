@@ -36,41 +36,42 @@
 \contentsline {subsection}{\numberline {4.8}Linear Diophantine}{11}{}%
 \contentsline {subsection}{\numberline {4.9}Matrix}{11}{}%
 \contentsline {subsection}{\numberline {4.10}Miller Rabin Primality Test}{12}{}%
-\contentsline {subsection}{\numberline {4.11}Fast Fourier Transform}{12}{}%
-\contentsline {subsection}{\numberline {4.12}OR Convolution}{13}{}%
-\contentsline {subsection}{\numberline {4.13}XOR Convolution}{13}{}%
+\contentsline {subsection}{\numberline {4.11}Guassian Elimination}{12}{}%
+\contentsline {subsection}{\numberline {4.12}Fast Fourier Transform}{12}{}%
+\contentsline {subsection}{\numberline {4.13}OR Convolution}{13}{}%
+\contentsline {subsection}{\numberline {4.14}XOR Convolution}{13}{}%
 \contentsline {section}{\numberline {5}String}{13}{}%
 \contentsline {subsection}{\numberline {5.1}Rolling Hash}{13}{}%
 \contentsline {subsection}{\numberline {5.2}Z-Function}{13}{}%
-\contentsline {subsection}{\numberline {5.3}Prefix Function}{13}{}%
+\contentsline {subsection}{\numberline {5.3}Prefix Function}{14}{}%
 \contentsline {subsection}{\numberline {5.4}Manacher's Algorithm}{14}{}%
 \contentsline {subsection}{\numberline {5.5}Aho-Corasick}{14}{}%
 \contentsline {section}{\numberline {6}Tree}{14}{}%
 \contentsline {subsection}{\numberline {6.1}Tree}{14}{}%
-\contentsline {subsection}{\numberline {6.2}Lowest Common Ancestor}{14}{}%
+\contentsline {subsection}{\numberline {6.2}Lowest Common Ancestor}{15}{}%
 \contentsline {subsection}{\numberline {6.3}Heavy Light Decomposition}{15}{}%
 \contentsline {subsection}{\numberline {6.4}Centroid Decomposition}{15}{}%
 \contentsline {section}{\numberline {7}Geometry (Kactl)}{15}{}%
 \contentsline {subsection}{\numberline {7.1}Kactl template}{15}{}%
-\contentsline {subsection}{\numberline {7.2}Point}{15}{}%
+\contentsline {subsection}{\numberline {7.2}Point}{16}{}%
 \contentsline {subsection}{\numberline {7.3}CCW}{16}{}%
 \contentsline {subsection}{\numberline {7.4}Circle Intersection}{16}{}%
 \contentsline {subsection}{\numberline {7.5}Circle Line}{16}{}%
 \contentsline {subsection}{\numberline {7.6}Circle Polygon}{16}{}%
 \contentsline {subsection}{\numberline {7.7}Circle Tagents}{16}{}%
-\contentsline {subsection}{\numberline {7.8}Closest pair of points}{16}{}%
+\contentsline {subsection}{\numberline {7.8}Closest pair of points}{17}{}%
 \contentsline {subsection}{\numberline {7.9}Convex Hull}{17}{}%
 \contentsline {subsection}{\numberline {7.10}Hull Diameter}{17}{}%
 \contentsline {subsection}{\numberline {7.11}Point inside Hull}{17}{}%
 \contentsline {subsection}{\numberline {7.12}Point on Segment}{17}{}%
 \contentsline {subsection}{\numberline {7.13}Segment Distance}{17}{}%
-\contentsline {subsection}{\numberline {7.14}Segment Intersection}{17}{}%
-\contentsline {subsection}{\numberline {7.15}Line Distance}{17}{}%
+\contentsline {subsection}{\numberline {7.14}Segment Intersection}{18}{}%
+\contentsline {subsection}{\numberline {7.15}Line Distance}{18}{}%
 \contentsline {subsection}{\numberline {7.16}Line Intersection}{18}{}%
 \contentsline {subsection}{\numberline {7.17}Polygon Area}{18}{}%
 \contentsline {subsection}{\numberline {7.18}Polygon Cut}{18}{}%
 \contentsline {subsection}{\numberline {7.19}Point inside Polygon}{18}{}%
 \contentsline {subsection}{\numberline {7.20}Manhattan MST}{18}{}%
-\contentsline {section}{\numberline {8}Notes}{18}{}%
-\contentsline {subsection}{\numberline {8.1}Finding min cut}{18}{}%
-\contentsline {subsection}{\numberline {8.2}Finding minimum vertex cover on bipartite graph (Kőnig's theorem)}{18}{}%
+\contentsline {section}{\numberline {8}Notes}{19}{}%
+\contentsline {subsection}{\numberline {8.1}Finding min cut}{19}{}%
+\contentsline {subsection}{\numberline {8.2}Finding minimum vertex cover on bipartite graph (Kőnig's theorem)}{19}{}%

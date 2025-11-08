@@ -22,6 +22,6 @@ vector<int> convolute_or(vector<int> &a, vector<int> &b){
         }
     }
 }
-// Đơn giản là dùng dp sos để tính cho A[i] và B[i]
-// Sau đo C[i] = a[i] * b[i]
-// Lúc này đảo ngược dp sos để có C[i] với mỗi i thay vi là toàn bộ subset của i
+// Don gian la dung dp sos de tinh cho A[i] va B[i]
+// Sau do C[i] = a[i] * b[i]
+// Luc nay dao nguoc dp sos de co C[i] voi moi i thay vi la toan bo subset cua i

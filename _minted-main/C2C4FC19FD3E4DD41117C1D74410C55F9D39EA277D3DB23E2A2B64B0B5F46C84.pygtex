@@ -23,4 +23,7 @@
 \PYG{+w}{        }\PYG{p}{\PYGZcb{}}
 \PYG{+w}{    }\PYG{p}{\PYGZcb{}}
 \PYG{p}{\PYGZcb{}}
+\PYG{c+c1}{// Don gian la dung dp sos de tinh cho A[i] va B[i]}
+\PYG{c+c1}{// Sau do C[i] = a[i] * b[i]}
+\PYG{c+c1}{// Luc nay dao nguoc dp sos de co C[i] voi moi i thay vi la toan bo subset cua i}
 \end{Verbatim}

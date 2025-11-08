@@ -310,6 +310,12 @@
 [Should be fast]
 {cpp}{swishy/MillerRabin.cpp}
 
+\algorithm{Guassian Elimination}{
+    Solve system of $n$ equations with $m$ unknowns. 
+}
+[$\mathcal{O}(min(n, m) \cdot nm)$]
+{cpp}{swishy/GuassianElimination.cpp}
+
 \algorithm{Fast Fourier Transform}{
     $multiplymod(A, B, M)$ returns C where \[ C[u]=\sum_{i=1}^{|A|} \sum_{j=1}^{|B|} A_i \cdot B_j \mod M \ (i+j=u)\]
 }

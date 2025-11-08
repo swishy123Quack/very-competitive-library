@@ -1,9 +1,9 @@
-A -> đăc biệt
-B -> đăc biệt
-C -> đăc biệt
-A[i]*B[i]*C[i] -> chuyển ngược về ta sẽ được xor convolution
+A -> dac biet
+B -> dac biet
+C -> dac biet
+A[i]*B[i]*C[i] -> chuyen nguoc ve ta se duoc xor convolution
 
-void xorconv(vector<int> &a,int modul){ // Biến đổi A -> đặc biệt
+void xorconv(vector<int> &a,int modul){ // Bien doi A -> dac biet
     int n = a.size();
     for(int m = n/2; m; m/=2){
         for(int i = 0 ; i < n; i+= 2 * m){
@@ -16,7 +16,7 @@ void xorconv(vector<int> &a,int modul){ // Biến đổi A -> đặc biệt
         }
     }
 }
-void xorconv2(vector<int> &a,int modul){ // Biến đổi đặc biệt thành A
+void xorconv2(vector<int> &a,int modul){ // Bien doi dac biet thanh A
     int n = a.size();
     for(int m = 1; m<n; m*=2){
         for(int i = 0 ; i < n; i+= 2 * m){
