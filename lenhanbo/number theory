@@ -1,0 +1,1 @@
+1. work with both or and and: if there exist a subset of which sum (|, &) is X, exists a subset with size <= log2(A_i). So when work with these type of problems, we just need to maintain a small number of candidates.
