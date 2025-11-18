@@ -1,33 +1,11 @@
-// Returns minimum x for which a ^ x % m = b % m.
-int solve(int a, int b, int m) {
-    a %= m, b %= m;
-    int k = 1, add = 0, g;
-    while ((g = gcd(a, m)) > 1) {
-        if (b == k)
-            return add;
-        if (b % g)
-            return -1;
-        b /= g, m /= g, ++add;
-        k = (k * 1ll * a / g) % m;
-    }
-
-    int n = sqrt(m) + 1;
-    int an = 1;
-    for (int i = 0; i < n; ++i)
-        an = (an * 1ll * a) % m;
-
-    unordered_map<int, int> vals;
-    for (int q = 0, cur = b; q <= n; ++q) {
-        vals[cur] = q;
-        cur = (cur * 1ll * a) % m;
-    }
-
-    for (int p = 1, cur = k; p <= n; ++p) {
-        cur = (cur * 1ll * an) % m;
-        if (vals.count(cur)) {
-            int ans = n * p - vals[cur] + add;
-            return ans;
-        }
-    }
-    return -1;
+ll modLog(ll a, ll b, ll m) { // find smallest x that a^x % b = m
+	ll n = (ll) sqrt(m) + 1, e = 1, f = 1, j = 1;
+	unordered_map<ll, ll> A;
+	while (j <= n && (e = f = e * a % m) != b % m)
+		A[e * b % m] = j++;
+	if (e == b % m) return j;
+	if (__gcd(m, e) == __gcd(m, b)) 
+		rep(i,2,n+2) if (A.count(e = e * f % m))
+			return n * i - A[e];
+	return -1;
 }
