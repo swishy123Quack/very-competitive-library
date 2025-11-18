@@ -4,3 +4,4 @@
 4. Mex : In a permutation, mex(l,r) = min(mex(1,r), mex(l,n))
 5. X = $\sum_{D} \phi(D)$ for all Divisor D of X. In some cases we can use this property to calculate gcd(a,b).
 6. $A[i] = -A[i]$ mod M so we can abuse this property which such problems related  to (a[i] + b[i])%M
+7. Wilson theorem : $n$ is a prime number iff $(n-1)! = n-1$ mod n. 
