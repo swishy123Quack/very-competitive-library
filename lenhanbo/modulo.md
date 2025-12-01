@@ -3,3 +3,4 @@
 3. $x = a$ mod n and $x = a$ mod m means $x = a$ mod lcm(m,n)
 4. Find $a^x = b$ mod m with baby step - giant step algo (discrete log)
 5. A[x % a] = B[x % b] => pattern of size gcd(a,b).  
+6. Consider primitive root with problems with product modulo
