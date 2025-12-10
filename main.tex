@@ -10,6 +10,7 @@
 \usepackage{minted2}
 \usepackage{fontawesome5}
 \usepackage{fancyhdr}
+\usepackage{verbatim}
 
 \pagestyle{fancy}
 
@@ -329,7 +330,12 @@
 {cpp}{swishy/ORConvolution.cpp}
 
 \algorithm{XOR Convolution}{
-    idk lol.
+    \begin{itemize}
+        \item We want to transform a[x] -> b[x] to perform pure multiple operation.
+        \item a[x] with contribute a[x] to b[y] if bitcount(x \^{} y) $\mod 2 = 0$
+        \item a[x] with contribute -a[x] to b[y] if bitcount(x \^{} y) $\mod 2 = 1$
+        \item So we can use dp sos to compute dp[mask][j] = number of y that bitcount(mask \^{} y) == j with principle of inclusive and exclusive.
+    \end{itemize}
 }
 {cpp}{lenhanbo/XORConvolution.cpp}
 
@@ -353,6 +359,12 @@
 [$\mathcal{O}(N)$]
 {cpp}{swishy/PrefixFunction.cpp}
 
+\algorithm{Suffix Array}{
+    Return the lexicographic order of all suffixes of $s$.
+}
+[$\mathcal{O}(N \log N)$]
+{cpp}{lenhanbo/suffix_array.cpp}
+
 \algorithm{Manacher's Algorithm}{
     Return an array where the $i$-th element corresponds to the longest palindrome that has $i$ as the center, note that the algorithm only works for odd length palindrome, even can also be easily handled by inserting a dummy character in every even indicies.
 }
@@ -364,6 +376,8 @@
 }
 [$\mathcal{O}(M*K)$, where $M$ is the number of nodes in the \texttt{Trie}, and $K$ is the alphabet size]
 {cpp}{swishy/AhoCorasick.cpp}
+
+
 
 \msection{Tree}
 
@@ -440,6 +454,12 @@
 [$\mathcal{O}(1)$]
 {cpp}{kactl/CircleTangents.cpp}
 
+\algorithm{Circum Circle}{
+    The circumcirle of a triangle is the circle intersecting all three vertices. ccRadius returns the radius of the circle going through points A, B and C and ccCenter returns the center of the same circle.
+}
+[$\mathcal{0}(1)$]
+{cpp}{kactl/CircumCircle.cpp}
+
 \algorithm{Closest pair of points}{
     Finds the closest pair of points.
 }
@@ -508,11 +528,50 @@
 [$\mathcal{O}(1)$]
 {cpp}{kactl/LineIntersection.cpp}
 
+\algorithm{Line Projection}{
+    \begin{itemize}
+        \item Projects point p onto line ab. Set refl=true to get reflection of point p across line ab instead. 
+        \item The wrong point will be returned if P is an integer point and the desired point doesn't have integer coordinates.
+    \end{itemize}
+}
+[$\mathcal{O}(1)$]
+{cpp}{kactl/LineProjection.cpp}
+
+\algorithm{Line-Hull Intersection}{
+    Line-convex polygon intersection. The polygon must be ccw and have no collinear points.
+    lineHull(line, poly) returns a pair describing the intersection of a line with the polygon:
+    \begin{itemize}
+        \item $(-1, -1)$ if no collision,
+        \item $(i, -1)$ if touching the corner $i$,
+        \item $(i, i)$ if along side $(i, i+1)$,
+        \item $(i, j)$ if crossing sides $(i, i+1)$ and $(j, j+1)$.
+    \end{itemize}
+    In the last case, if a corner $i$ is crossed, this is treated as happening on side $(i, i+1)$.
+    The points are returned in the same order as the line hits the polygon.
+    \texttt{extrVertex} returns the point of a hull with the max projection onto a line.
+}
+[$\mathcal{O}(\log n)$]
+{cpp}{kactl/LineHullIntersection.cpp}
+
 \algorithm{Polygon Area}{
     Returns twice the signed area of a polygon.
 }
 [$\mathcal{O}(n)$]
 {cpp}{kactl/PolygonArea.cpp}
+
+\algorithm{Polygon Center}{
+    Returns the center of mass for a polygon.
+}
+[$\mathcal{O}(n)$]
+{cpp}{kactl/PolygonCenter.cpp}
+
+\algorithm{Polygon Union}{
+    Calculates the area of the union of $n$ polygons (not necessarily convex). 
+    The points within each polygon must be given in CCW order.
+    (Epsilon checks may optionally be added to sideOf/sgn, but shouldn't be needed)
+}
+[$\mathcal{O}(n^2)$, where $n$ is the total number of points]
+{cpp}{kactl/PolygonUnion.cpp}
 
 \algorithm{Polygon Cut}{
     Returns a vector with the vertices of a polygon with everything to the left of the line going from s to e cut away.
@@ -529,6 +588,12 @@
 [$\mathcal{O}(n)$]
 {cpp}{kactl/InsidePolygon.cpp}
 
+\algorithm{Minkowski Sum}{
+    Consider two sets $A$ and $B$ of points on a plane. Minkowski sum $A + B$ is defined as $\{a + b| a \in A, b \in B\}$.
+}
+[$\mathcal{O}(|P| + |Q|)$]
+{cpp}{swishy/minkowski.cpp}
+
 \algorithm{Manhattan MST}{
     Given N points, returns up to $4*N$ edges, which are guaranteed to contain a minimum spanning tree for the graph with edge weights $w(p, q) = |p.x - q.x| + |p.y - q.y|$. Edges are in the form (distance, src, dst). Use a standard MST algorithm on the result to find the final MST.
 }
@@ -536,6 +601,10 @@
 {cpp}{kactl/ManhattanMST.cpp}
 
 \msection{Notes}
+
+\begin{center}
+    \includegraphics[width=0.2\textwidth]{poo.png} \vspace{1em}
+\end{center}
 
 \subsection{Finding min cut}
 To build a min cut, once you have finished finding the max flow, bfs from source one more time. Edges that connect reached vertex and unreached vertex is considered a cut.
@@ -546,5 +615,55 @@ To build a min cut, once you have finished finding the max flow, bfs from source
         \item To build, use flow to find the maximum matching, and bfs from source one more time. The minimum vertex cover is the set of all vertices in the left partition that were not visited, combined with all vertices in the right partition that were visited.
         \item The weighted version is the same, except the capacity of the edge from source/sink to a vertex is that vertex weight.
     \end{itemize}
+
+\subsection{Bitwise}
+    \begin{itemize}
+        \item When work with both or and and: if there exist a subset of which sum $(|, \&)$ is X, exists a subset with size $\leq log_2(A_i)$. So when work with these type of problems, we just need to maintain a small number of candidates.
+        \item There are no data structures for OR and AND problems (excepts for or,and convolution), when encountered, just look for essensial observations.
+    \end{itemize}
+
+\subsection{CRT}
+    When calculate with modulo m is not prime. Factorzie m to prime numbers and calculate solution on these prime numbers. Then use CRT to find the final answer
+
+\subsection{Divisor}
+    \begin{itemize}
+        \item X = $\sum_{D} \phi(D)$ for all Divisor D of X. In some cases we can use this property to calculate gcd(a,b).
+        \item There is at most $1$ divisor of $x$ that exceeds $\sqrt{A}$
+    \end{itemize}
+
+\subsection{Heap-like permutation}
+\begin{itemize}
+    \item A permutation is called heaplike if value of parent nodes is smaller/larger than its children.
+    \item If there are no constraints, probability of a node $u$ to belongs to a heaplike tree is independent with all other nodes. $P(u) = 1/(size of subtree u)$.
+    \item The number of heaplike permuation is $N! / P(u)$
+\end{itemize}
+
+\subsection{Little Fermat}
+For all prime numbers $p$, $a^p = a \mod p$
+
+\subsection{Lucas Theorem}
+$nCk \mod m = n1Ck1 * n2Ck2 * ... \mod m$ with $n_i$ are m-base demonstration of n. k is the same
+
+\subsection{Mex}
+\begin{itemize}
+    \item Mex can not be calculate by binary search or whatsoever.
+    \item In a permutation, mex(l,r) = min(mex(1,r), mex(l,n))
+\end{itemize}
+
+\subsection{Modulo}
+\begin{itemize}
+    \item $A[i] = -A[i]$ mod M so we can abuse this property which such problems related  to (a[i] + b[i])%M
+    \item Wilson theorem : $n$ is a prime number iff $(n-1)! = n-1$ mod n. 
+    \item $x = a$ mod n and $x = a$ mod m means $x = a$ mod lcm(m,n)
+    \item Find $a^x = b$ mod m with baby step - giant step algo (discrete log)
+    \item $A[x \mod a] = B[x \mod b]$ => pattern of size gcd(a,b).  
+    \item Consider primitive root with problems with product modulo
+\end{itemize}
+
+\subsection{Number Theory}
+\begin{itemize}
+    \item And, or, gcd as f : F(i) = j that f[j..i] <= X, F(i) <= F(i+1) so we can do some magical things like binary search on this function.
+    \item pythagore $ a= m^2 - n^2$, $b= 2mn$, $c = m ^2 + n^2$.
+\end{itemize}
 
 \end{document} 

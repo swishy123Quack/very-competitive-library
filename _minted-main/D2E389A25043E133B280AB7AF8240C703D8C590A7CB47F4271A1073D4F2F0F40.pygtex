@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{template}\PYG{o}{\PYGZlt{}}\PYG{k}{class}\PYG{+w}{ }\PYG{n+nc}{P}\PYG{o}{\PYGZgt{}}
+\PYG{n}{P}\PYG{+w}{ }\PYG{n}{lineProj}\PYG{p}{(}\PYG{n}{P}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{P}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{P}\PYG{+w}{ }\PYG{n}{p}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{refl}\PYG{o}{=}\PYG{n+nb}{false}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{	}\PYG{n}{P}\PYG{+w}{ }\PYG{n}{v}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{b}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{;}
+\PYG{+w}{	}\PYG{k}{return}\PYG{+w}{ }\PYG{n}{p}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{v}\PYG{p}{.}\PYG{n}{perp}\PYG{p}{()}\PYG{o}{*}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{+}\PYG{n}{refl}\PYG{p}{)}\PYG{o}{*}\PYG{n}{v}\PYG{p}{.}\PYG{n}{cross}\PYG{p}{(}\PYG{n}{p}\PYG{o}{\PYGZhy{}}\PYG{n}{a}\PYG{p}{)}\PYG{o}{/}\PYG{n}{v}\PYG{p}{.}\PYG{n}{dist2}\PYG{p}{();}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
