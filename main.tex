@@ -213,6 +213,12 @@
 [$\mathcal{O}(N)$]  
 {cpp}{swishy/BridgeArt.cpp}
 
+\algorithm{Eulerian Path/Cycle}{
+    Find a path/cycle that traverse every edges exactly once.
+}
+[$\mathcal{O}(N+M)$]  
+{cpp}{swishy/EulerianPath.cpp}
+
 \algorithm{Two SAT}{
     Solve a system of boolean formula, where every clause has exactly two literals.
 }
@@ -726,6 +732,10 @@ Then
 \item Pick's theorem
 
 For simple polygon, when points are all integer, we have $A=\text{\#\{lattice points in the interior\}} + \frac{\text{\#\{lattice points on the boundary\}}}{2} - 1$
+
+\item Apollonius Circle
+
+The set $z : \left| z - a \right| = k \left| z - b \right|$ is the circle of radius $\frac{k\left|b-a\right|}{\lvert k^2-1 \rvert}$ centered at $\frac{k^2b-a}{k^2-1}$.
 
 \end{itemize}
 

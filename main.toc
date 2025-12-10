@@ -21,22 +21,23 @@
 \contentsline {subsection}{\numberline {3.1}Graph}{7}{}%
 \contentsline {subsection}{\numberline {3.2}Strongly Connected Components}{7}{}%
 \contentsline {subsection}{\numberline {3.3}Bridges and Articulations}{8}{}%
-\contentsline {subsection}{\numberline {3.4}Two SAT}{8}{}%
-\contentsline {subsection}{\numberline {3.5}MCMF}{8}{}%
-\contentsline {subsection}{\numberline {3.6}Maximum Flow (Dinic)}{9}{}%
-\contentsline {subsection}{\numberline {3.7}Maximum Matching (Hopcroft Karp)}{9}{}%
-\contentsline {subsection}{\numberline {3.8}General Matching (Blossom)}{10}{}%
+\contentsline {subsection}{\numberline {3.4}Eulerian Path/Cycle}{8}{}%
+\contentsline {subsection}{\numberline {3.5}Two SAT}{8}{}%
+\contentsline {subsection}{\numberline {3.6}MCMF}{9}{}%
+\contentsline {subsection}{\numberline {3.7}Maximum Flow (Dinic)}{9}{}%
+\contentsline {subsection}{\numberline {3.8}Maximum Matching (Hopcroft Karp)}{9}{}%
+\contentsline {subsection}{\numberline {3.9}General Matching (Blossom)}{10}{}%
 \contentsline {section}{\numberline {4}Math}{10}{}%
 \contentsline {subsection}{\numberline {4.1}Modular Int}{10}{}%
 \contentsline {subsection}{\numberline {4.2}Modular Square Root}{11}{}%
 \contentsline {subsection}{\numberline {4.3}Discrete Log}{11}{}%
 \contentsline {subsection}{\numberline {4.4}Primite Root}{11}{}%
-\contentsline {subsection}{\numberline {4.5}Euler's Totient Funnction}{11}{}%
+\contentsline {subsection}{\numberline {4.5}Euler's Totient Funnction}{12}{}%
 \contentsline {subsection}{\numberline {4.6}Chinese Remainder Theorem}{12}{}%
 \contentsline {subsection}{\numberline {4.7}Extended Euclidean}{12}{}%
 \contentsline {subsection}{\numberline {4.8}Linear Diophantine}{12}{}%
 \contentsline {subsection}{\numberline {4.9}Matrix}{12}{}%
-\contentsline {subsection}{\numberline {4.10}Miller Rabin Primality Test}{12}{}%
+\contentsline {subsection}{\numberline {4.10}Miller Rabin Primality Test}{13}{}%
 \contentsline {subsection}{\numberline {4.11}Guassian Elimination}{13}{}%
 \contentsline {subsection}{\numberline {4.12}Fast Fourier Transform}{13}{}%
 \contentsline {subsection}{\numberline {4.13}OR Convolution}{14}{}%
@@ -44,12 +45,12 @@
 \contentsline {section}{\numberline {5}String}{14}{}%
 \contentsline {subsection}{\numberline {5.1}Rolling Hash}{14}{}%
 \contentsline {subsection}{\numberline {5.2}Z-Function}{14}{}%
-\contentsline {subsection}{\numberline {5.3}Prefix Function}{14}{}%
+\contentsline {subsection}{\numberline {5.3}Prefix Function}{15}{}%
 \contentsline {subsection}{\numberline {5.4}Suffix Array}{15}{}%
 \contentsline {subsection}{\numberline {5.5}Manacher's Algorithm}{15}{}%
 \contentsline {subsection}{\numberline {5.6}Aho-Corasick}{15}{}%
-\contentsline {section}{\numberline {6}Tree}{15}{}%
-\contentsline {subsection}{\numberline {6.1}Tree}{15}{}%
+\contentsline {section}{\numberline {6}Tree}{16}{}%
+\contentsline {subsection}{\numberline {6.1}Tree}{16}{}%
 \contentsline {subsection}{\numberline {6.2}Lowest Common Ancestor}{16}{}%
 \contentsline {subsection}{\numberline {6.3}Heavy Light Decomposition}{16}{}%
 \contentsline {subsection}{\numberline {6.4}Centroid Decomposition}{16}{}%
@@ -60,13 +61,13 @@
 \contentsline {subsection}{\numberline {7.4}Circle Intersection}{17}{}%
 \contentsline {subsection}{\numberline {7.5}Circle Line}{17}{}%
 \contentsline {subsection}{\numberline {7.6}Circle Polygon}{17}{}%
-\contentsline {subsection}{\numberline {7.7}Circle Tagents}{17}{}%
+\contentsline {subsection}{\numberline {7.7}Circle Tagents}{18}{}%
 \contentsline {subsection}{\numberline {7.8}Circum Circle}{18}{}%
 \contentsline {subsection}{\numberline {7.9}Closest pair of points}{18}{}%
 \contentsline {subsection}{\numberline {7.10}Convex Hull}{18}{}%
 \contentsline {subsection}{\numberline {7.11}Hull Diameter}{18}{}%
 \contentsline {subsection}{\numberline {7.12}Point inside Hull}{18}{}%
-\contentsline {subsection}{\numberline {7.13}Point on Segment}{18}{}%
+\contentsline {subsection}{\numberline {7.13}Point on Segment}{19}{}%
 \contentsline {subsection}{\numberline {7.14}Segment Distance}{19}{}%
 \contentsline {subsection}{\numberline {7.15}Segment Intersection}{19}{}%
 \contentsline {subsection}{\numberline {7.16}Line Distance}{19}{}%
@@ -78,7 +79,7 @@
 \contentsline {subsection}{\numberline {7.22}Polygon Union}{20}{}%
 \contentsline {subsection}{\numberline {7.23}Polygon Cut}{20}{}%
 \contentsline {subsection}{\numberline {7.24}Point inside Polygon}{20}{}%
-\contentsline {subsection}{\numberline {7.25}Minkowski Sum}{20}{}%
+\contentsline {subsection}{\numberline {7.25}Minkowski Sum}{21}{}%
 \contentsline {subsection}{\numberline {7.26}Manhattan MST}{21}{}%
 \contentsline {section}{\numberline {8}Notes}{21}{}%
 \contentsline {subsection}{\numberline {8.1}Finding min cut}{21}{}%
@@ -89,7 +90,7 @@
 \contentsline {subsection}{\numberline {8.6}Heap-like permutation}{21}{}%
 \contentsline {subsection}{\numberline {8.7}Little Fermat}{21}{}%
 \contentsline {subsection}{\numberline {8.8}Lucas Theorem}{21}{}%
-\contentsline {subsection}{\numberline {8.9}Mex}{21}{}%
-\contentsline {subsection}{\numberline {8.10}Modulo}{21}{}%
+\contentsline {subsection}{\numberline {8.9}Mex}{22}{}%
+\contentsline {subsection}{\numberline {8.10}Modulo}{22}{}%
 \contentsline {subsection}{\numberline {8.11}Number Theory}{22}{}%
 \contentsline {subsection}{\numberline {8.12}Number Formulas}{22}{}%
