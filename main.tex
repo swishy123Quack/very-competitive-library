@@ -341,7 +341,7 @@
 
 \algorithm{XOR Convolution}{
     \begin{itemize}
-        \item We want to transform a[x] -> b[x] to perform pure multiple operation.
+        \item We want to transform a[x] $\rightarrow$ b[x] to perform pure multiple operation.
         \item a[x] with contribute a[x] to b[y] if bitcount(x \^{} y) $\mod 2 = 0$
         \item a[x] with contribute -a[x] to b[y] if bitcount(x \^{} y) $\mod 2 = 1$
         \item So we can use dp sos to compute dp[mask][j] = number of y that bitcount(mask \^{} y) == j with principle of inclusive and exclusive.
