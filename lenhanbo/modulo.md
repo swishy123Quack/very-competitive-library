@@ -4,3 +4,4 @@
 4. Find $a^x = b$ mod m with baby step - giant step algo (discrete log)
 5. A[x \mod a] = B[x \mod b] => pattern of size gcd(a,b).  
 6. Consider primitive root with problems with product modulo
+7. when work with dp with + operator, concern inverse(0), in that case, you need to divide into cases to handle.
