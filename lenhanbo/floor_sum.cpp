@@ -1,4 +1,4 @@
-ll floor_sum(ll n, ll m, ll a, ll b) {
+ll floor_sum(ll n, ll m, ll a, ll b) { // sum((ax + b)/m)
   ll ans = 0;
   if (a >= m) ans += (n - 1) * n * (a / m) / 2, a %= m;
   if (b >= m) ans += n * (b / m), b %= m;
