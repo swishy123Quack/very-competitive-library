@@ -1,1 +1,2 @@
 Number of labeled vertice n nodes tree is n^(n-2)
+Generalized : given k trees in a forest whose sizes are a_i, number of ways to add edges to form a tree is product(a_i) * n^(k-2).
