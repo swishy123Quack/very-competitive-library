@@ -1,29 +1,41 @@
-void xorconv(vector<int> &a,int modul){ // chuyen tu dang binh thuong sang dang dac biet, xong cu lay a[i] = b[i] * c[i] ...
-    int n = a.size();
-    for(int m = n/2; m; m/=2){
-        for(int i = 0 ; i < n; i+= 2 * m){
-            for(int j = 0;j <m;++ j){
-                int x = a[i + j];
-                int y = a[i + j + m];
-                a[i + j] = (x + y)%modul;
-                a[i + j + m] = (x-y+modul) % modul;
-            }
-        }
+void fwt(vector <int> &a, bool inv = false) {
+  // and : x += y * (1, -1)
+  // or  : y += x * (1, -1)
+  // xor : x = (x + y) * (1, 1/2)
+  //       y = (x - y) * (1, 1/2)
+  int n = __lg(a.size());
+  for (int i = 0; i < n; ++i) {
+    for (int j = 0; j < 1 << n; ++j) if (j >> i & 1) {
+      int &x = a[j ^ (1 << i)], &y = a[j];
+      // do something
+      
+      if(!inv) y += x; // adapt this to requirement
+      else y -= x;
     }
+  }
 }
-void xorconv2(vector<int> &a,int modul){ // chuyen tu dang dac biet ve dang binh thuong => dap an sau khi fft
-    int n = a.size();
-    for(int m = 1; m<n; m*=2){
-        for(int i = 0 ; i < n; i+= 2 * m){
-            for(int j = 0;j <m;++ j){
-                int x = a[i + j];
-                int y = a[i + j + m];
-                a[i + j] = (x + y)%modul;
-                a[i + j + m] = (x-y+modul) % modul;
-            }
-        }
-    }
-    for(int i = 0;i<n;++i){
-        a[i] = 1LL * (ll)a[i] * binpow(n,modul - 2, modul) %modul;
-    }
+
+vector<int> subs_conv(vector<int> a, vector<int> b) {
+    // code or_fwt beforehand
+  // c_i = sum_{j & k = 0, j | k = i} a_j * b_k
+  int n = __lg(sz(a));
+  vector ha(n + 1, vector<int>(1 << n));
+  vector hb(n + 1, vector<int>(1 << n));
+  vector c(n + 1, vector<int>(1 << n));
+  for (int i = 0; i < 1 << n; ++i) {
+    ha[__builtin_popcount(i)][i] = a[i];
+    hb[__builtin_popcount(i)][i] = b[i];
+  }
+  for (int i = 0; i <= n; ++i)
+    or_fwt(ha[i]), or_fwt(hb[i]);
+  for (int i = 0; i <= n; ++i)
+    for (int j = 0; i + j <= n; ++j)
+      for (int k = 0; k < 1 << n; ++k)
+        c[i + j][k] = add(c[i + j][k],
+          mul(ha[i][k], hb[j][k]));
+  for (int i = 0; i <= n; ++i) or_fwt(c[i], true);
+  vector <int> ans(1 << n);
+  for (int i = 0; i < 1 << n; ++i)
+    ans[i] = c[__builtin_popcount(i)][i];
+  return ans;
 }
