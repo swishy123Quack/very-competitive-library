@@ -3,7 +3,7 @@ void fwt(vector <int> &a, bool inv = false) {
   // or  : y += x * (1, -1)
   // xor : x = (x + y) * (1, 1/2)
   //       y = (x - y) * (1, 1/2)
-  // if we want to precalculate contribution in reverse, remember to muliply with 1/(2^n) 
+  // if we want to precalculate contribution in reverse, remember to muliply with 1/(2^n), in this template, thats no need. 
   int n = __lg(a.size());
   for (int i = 0; i < n; ++i) {
     for (int j = 0; j < 1 << n; ++j) if (j >> i & 1) {
