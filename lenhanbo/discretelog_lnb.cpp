@@ -16,7 +16,7 @@ ll phi(ll n) {
     return res;
 }
 // Cấp của a mod m
-ll ord(ll a, ll m) { // primitive root
+ll ord(ll a, ll m) { 
     if (gcd(a, m) != 1)
         return -1;
     ll res = phi(m);
