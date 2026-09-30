@@ -33,7 +33,7 @@ void fft(vector<int> & a, bool invert) {
     }
 
     if (invert) {
-        int n_1 = inverse(n, mod);
+        int n_1 = inverse(n, mod); // ham nghich dao modulo
         for (int & x : a)
             x = (int)(1LL * x * n_1 % mod);
     }
