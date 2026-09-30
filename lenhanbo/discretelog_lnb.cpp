@@ -1,3 +1,33 @@
+ll powMod(ll x, ll p, ll md);
+ll gcd(ll x, ll y);
+// danh sách các ước nguyên tố của x (có thể trùng nhau)
+vector<ll> factorize(ll x);
+// hàm phi Euler
+ll phi(ll n) {
+    auto ps = factorize(n);
+    ll res = n;
+    ll last = -1;
+    for (auto p : ps) {
+        if (p != last) {
+            res = res / p * (p - 1);
+            last = p;
+        }
+    }
+    return res;
+}
+// Cấp của a mod m
+ll ord(ll a, ll m) { // primitive root
+    if (gcd(a, m) != 1)
+        return -1;
+    ll res = phi(m);
+    auto ps = factorize(res);
+    for (auto p : ps)
+        if (powMod(a, res / p, m) == 1)
+            res /= p;
+    return res;
+}
+
+
 ll DiscreteLog(ll a, ll b, ll m) { // a^x = b (mod m)
   const int B = 35000;
   ll k = 1 % m, ans = 0, g;
